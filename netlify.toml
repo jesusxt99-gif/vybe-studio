@@ -1,0 +1,5 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Netlify also exposes the function at /.netlify/functions/order.

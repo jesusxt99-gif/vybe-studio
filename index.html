@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101018">
+  <meta name="description" content="VYBE STUDIO — оформление Twitch на заказ по вашему ТЗ. 5 плашек — 500 ₽, логотип + баннер + экран офлайн — 500 ₽, 5 смайлов — 500 ₽, полный комплект — 1 500 ₽.">
+  <title>VYBE STUDIO — оформление Twitch на заказ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTYiIGZpbGw9IiMxNzEwMjAiLz48cGF0aCBkPSJNMTIgMTVoMTJsOCAyNCA4LTI0aDEyTDM5IDUxSDI1TDEyIDE1WiIgZmlsbD0iI2M3ZmY2OCIvPjxjaXJjbGUgY3g9IjQ5IiBjeT0iNDgiIHI9IjYiIGZpbGw9IiM5ZjdiZmYiLz48L3N2Zz4K" type="image/svg+xml">
+  <style>
+:root{--bg:#101018;--panel:#1a1823;--panel2:#211d2e;--line:#383243;--text:#f6f3fb;--sub:#b6b0c3;--lime:#c8ff68;--purple:#9d76ff;--purple2:#7447e6;--pink:#ff80c3;--head:'Unbounded',system-ui,sans-serif;--body:'Manrope',system-ui,sans-serif}
+*[hidden]{display:none!important}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}body{margin:0;background:var(--bg);color:var(--text);font:500 15px/1.6 var(--body);overflow-x:hidden}body.locked{overflow:hidden}button,input,textarea{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:2px solid var(--lime);outline-offset:4px}::selection{background:var(--lime);color:#181420}button:disabled{cursor:not-allowed;opacity:.48}.container{width:min(1240px,calc(100% - 92px));margin:0 auto}.site-shell{overflow:hidden}.section{padding:110px 0;scroll-margin-top:80px}.button{display:inline-flex;align-items:center;justify-content:center;gap:30px;border:1px solid transparent;border-radius:9px;min-height:58px;padding:0 25px;font-size:13px;font-weight:900;letter-spacing:.01em;transition:transform .25s,background .25s,border-color .25s,color .25s;white-space:nowrap}.button span{font-size:20px;line-height:1}.button:hover:not(:disabled){transform:translateY(-3px)}.button-lime{color:#14141c;background:var(--lime)}.button-lime:hover:not(:disabled){background:#dcff9a}.button-ghost{color:var(--text);border-color:#575067;background:rgba(22,20,33,.35)}.button-ghost:hover{border-color:var(--lime)}.button-purple{background:var(--purple);color:#171021}.button-dark-lime{color:#16141e;background:var(--lime)}
+/* Навигация */
+.site-header{position:sticky;top:0;z-index:40;background:rgba(16,16,24,.90);backdrop-filter:blur(24px);border-bottom:1px solid #ffffff12}.header-inner{height:86px;display:flex;align-items:center;justify-content:space-between;gap:30px}.brand{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;line-height:1}.brand-symbol{width:46px;height:46px;display:grid;place-items:center;position:relative;border:1px solid #c8ff6860;border-radius:12px;background:#c8ff68;color:#191821;font:900 32px/1 var(--head);letter-spacing:-5px;padding-right:6px;transform:rotate(-4deg)}.brand-symbol>span{position:absolute;font:16px var(--body);color:#8e55eb;right:0;top:-8px;transform:rotate(14deg)}.brand-word{font:900 20px/1 var(--head);letter-spacing:-1.4px}.brand-dot{color:var(--lime)}.brand-word small{font:700 9px var(--body);letter-spacing:3px;display:block;color:#aca4ba;margin-top:6px}.desktop-nav{display:flex;align-items:center;gap:34px;margin-left:auto}.desktop-nav a{color:#c7bfd2;font-size:13px;font-weight:750;transition:color .2s}.desktop-nav a:hover,.footer-links a:hover{color:var(--lime)}.header-cart{height:46px;padding:0 12px 0 18px;border:1px solid #494153;border-radius:10px;color:var(--text);background:#201c2a;display:flex;align-items:center;gap:10px;font-size:13px;font-weight:800}.header-cart:hover{border-color:var(--lime)}.header-cart svg{width:20px;height:20px}.cart-count{background:var(--lime);color:#11121b;min-width:27px;height:27px;border-radius:7px;display:grid;place-items:center;padding:0 4px;font-weight:900;font-size:12px}.cart-count.bump{animation:bump .35s}.menu-button{display:none;position:relative;border:1px solid #413b50;border-radius:8px;background:#1c1828;color:white;width:46px;height:46px}.menu-button span{display:block;height:2px;width:20px;background:white;margin:5px auto;border-radius:2px}.mobile-nav{display:none}.mobile-nav[hidden]{display:none!important}
+/* Главный экран */
+.hero{padding-top:87px;position:relative;isolation:isolate;background:radial-gradient(ellipse 66% 65% at 77% 42%,#45217c42,transparent 72%),linear-gradient(180deg,#13111d 0%,#101018 95%)}.hero:before{content:"";position:absolute;inset:0;z-index:-1;background-image:linear-gradient(#ffffff06 1px,transparent 1px),linear-gradient(90deg,#ffffff06 1px,transparent 1px);background-size:70px 70px;mask-image:linear-gradient(90deg,transparent 20%,#000 75%,transparent)}.hero-halo{position:absolute;filter:blur(72px);pointer-events:none;z-index:-1;border-radius:50%}.hero-halo-one{right:-150px;top:110px;width:500px;height:420px;background:#783ff338;transform:rotate(-30deg)}.hero-halo-two{right:29%;bottom:90px;width:190px;height:170px;background:#c8ff6812}.hero-inner{display:grid;grid-template-columns:1.03fr 1fr;align-items:center;gap:32px;min-height:600px}.hero-content{position:relative;z-index:2;padding-bottom:55px}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:9px 13px;border:1px solid #62566c;border-radius:5px;font-size:10px;font-weight:900;letter-spacing:1.6px;color:#d7c9ea;background:#221d2b}.pulse-dot{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 0 4px #c8ff6820}.eyebrow-spark{color:var(--lime);font-size:15px;margin-left:8px}.hero h1{font:850 clamp(37px,4.2vw,66px)/1.18 var(--head);letter-spacing:-3px;margin:27px 0 25px;white-space:nowrap}.hero-highlight{color:var(--lime);position:relative;display:inline-block;z-index:0}.hero-highlight:after{content:"";position:absolute;height:10px;background:#9e70efb3;left:1%;right:3%;bottom:-9px;z-index:-1;transform:skew(-24deg) rotate(-1deg);border-radius:50%}.hero-highlight-dot{color:var(--purple)}.hero-description{max-width:495px;color:#b9b5c4;font-size:16px;line-height:1.9;margin-bottom:30px}.hero-description strong{color:#f4edff}.hero-buttons{display:flex;flex-wrap:wrap;gap:12px}.hero-proof{display:flex;align-items:center;gap:15px;margin-top:58px;color:#b3aebd;font-size:11px;line-height:1.6;letter-spacing:.2px}.hero-proof strong{color:var(--text);font-weight:900}.hero-star{color:var(--purple);font-size:30px}.hero-proof-line{width:1px;height:35px;background:#534a61;margin:0 12px}.hero-stage{min-height:530px;position:relative;display:grid;place-items:center;transform:translate(12px,-15px)}.mock-stream{width:100%;max-width:580px;aspect-ratio:1.32/1;transform:perspective(1400px) rotateY(-8deg) rotateX(3deg) rotate(-4deg);border:1px solid #9681be75;border-radius:14px;overflow:hidden;box-shadow:0 40px 100px #05020d9e,0 0 75px #8758ed28;background:#130f1f;position:relative}.mock-stream-top{height:46px;background:#1c1730;display:flex;align-items:center;justify-content:space-between;padding:0 17px;color:#b9aed2;font:800 9px var(--body);letter-spacing:1.8px}.mock-dots{display:flex;gap:5px}.mock-dots i{width:7px;height:7px;border-radius:50%;background:#765eaa}.mock-dots i:first-child{background:#e882d5}.mock-dots i:nth-child(2){background:#ccb968}.mock-top-arrow{color:var(--lime);font-size:16px}.mock-stream-body{height:calc(100% - 46px);position:relative;overflow:hidden;background:radial-gradient(circle at 45% 40%,#7131b4,transparent 41%),linear-gradient(132deg,#24153e,#482a79 53%,#141025)}.mock-grid{position:absolute;inset:0;background-image:linear-gradient(#c8ff6820 1px,transparent 1px),linear-gradient(90deg,#c8ff6820 1px,transparent 1px);background-size:38px 38px;transform:perspective(300px) rotateX(24deg) scale(1.4);opacity:.6;mask-image:linear-gradient(90deg,transparent 10%,#000)}.mock-disc{position:absolute;aspect-ratio:1;border:1px solid #b1ff5e7d;border-radius:50%;transform:rotate(-21deg)}.mock-disc-1{width:420px;left:8%;top:-20%;box-shadow:0 0 0 35px #8a68e216,0 0 0 70px #8a68e214}.mock-disc-2{width:220px;left:28%;top:2%;border:2px dashed #e8dcfa70}.mock-live{position:absolute;top:18px;left:19px;background:#f65caa;border-radius:3px;padding:6px 9px;color:#180922;font:900 9px var(--body);letter-spacing:1px}.mock-live i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#180922;margin-right:3px}.mock-big-v{position:absolute;left:23%;top:11%;font:900 clamp(140px,18vw,260px)/1 var(--head);color:var(--lime);text-shadow:8px 9px 0 #270c55,-8px -7px 0 #b3a3ff;transform:skewY(-7deg);letter-spacing:-30px}.mock-big-v span{font:40px var(--body);position:absolute;top:9%;right:2%;color:white;text-shadow:none}.mock-scene-text{position:absolute;bottom:48px;left:24px;font:900 clamp(17px,2.1vw,30px)/1.18 var(--head);letter-spacing:-1.5px;text-shadow:0 4px 0 #38166c}.mock-scene-text span{display:block;color:var(--lime)}.mock-camera{position:absolute;right:16px;bottom:48px;width:28%;height:35%;border:3px solid var(--lime);border-radius:8px;overflow:hidden;box-shadow:0 0 22px #c8ff6852;background:linear-gradient(160deg,#9964da,#31255f)}.mock-person{position:absolute;inset:0;display:grid;place-items:end center}.mock-head{position:absolute;top:23%;left:38%;width:26%;aspect-ratio:1;border-radius:50%;background:#d2a3c5;box-shadow:0 0 0 7px #3c2a67}.mock-body-person{position:absolute;bottom:-18%;left:20%;width:65%;height:53%;border-radius:45% 45% 0 0;background:#201933;box-shadow:0 0 0 5px #56388c}.mock-camera>span{position:absolute;bottom:0;left:0;right:0;text-align:center;background:var(--lime);color:#16131d;font:900 9px var(--body);padding:4px}.mock-bottom{position:absolute;bottom:0;width:100%;height:28px;display:flex;justify-content:space-between;align-items:center;background:#c8ff68;color:#24152d;padding:0 12px;font:900 8px var(--body);letter-spacing:1.2px}.preview-floating{position:absolute;z-index:2;border:1px solid #9984c084;box-shadow:0 20px 45px #100b22c9;color:#f2eaff;background:#2e234a;backdrop-filter:blur(12px)}.preview-floating-one{top:20px;right:-14px;padding:12px 17px;border-radius:8px;transform:rotate(9deg);font-size:10px;font-weight:900;letter-spacing:1px}.preview-floating-two{bottom:15px;left:-20px;border-radius:12px;padding:12px 16px;display:flex;align-items:center;gap:10px;transform:rotate(-5deg)}.float-heart{display:grid;place-items:center;width:38px;height:38px;border-radius:9px;background:var(--lime);color:#49258d;font-size:22px}.preview-floating-two b{display:block;font-size:10px;letter-spacing:1px}.preview-floating-two small{display:block;font-size:10px;color:#ad9dc3;margin-top:3px}.hero-asterisk{position:absolute;color:var(--lime);z-index:2;font-size:76px;text-shadow:0 0 34px #c8ff6830}.hero-asterisk-top{top:48px;left:4px}.hero-asterisk-bottom{bottom:25px;right:22px;color:var(--purple);font-size:49px}.hero-edge{display:flex;justify-content:space-between;align-items:center;padding:30px 0 20px;border-top:1px solid #ffffff12;color:#777180;font-size:10px;font-weight:900;letter-spacing:2px}.marquee{overflow:hidden;background:var(--lime);color:#171524;height:60px;display:flex;align-items:center;transform:rotate(-1deg) scale(1.02);margin:3px 0 0}.marquee-inner{display:flex;align-items:center;gap:29px;white-space:nowrap;min-width:max-content;animation:marquee 35s linear infinite}.marquee span{font:900 20px var(--head);letter-spacing:-.6px}.marquee b{font-size:26px;color:#7950ca}
+/* Общее оформление секций */
+.section-heading{display:flex;align-items:end;justify-content:space-between;gap:50px;margin-bottom:38px}.section-kicker{font-size:11px;font-weight:900;letter-spacing:2px;color:var(--lime);margin-bottom:24px}.kicker-line{display:inline-block;width:25px;height:2px;background:var(--lime);vertical-align:middle;margin-right:10px}.section-heading h2,.how-section h2,.faq-section h2{font:850 clamp(29px,3.3vw,49px)/1.28 var(--head);letter-spacing:-2px;margin:0}.muted-heading{color:#716b80}.section-heading>p{max-width:320px;margin:0 0 5px;color:var(--sub);font-size:14px;line-height:1.9}.catalog-section{background:var(--bg)}.catalog-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:25px}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{padding:11px 17px;border-radius:8px;border:1px solid #443d4e;background:#1b1924;color:#c1b9cf;font-size:12px;font-weight:800;transition:background .2s,border-color .2s,color .2s}.filter span{margin-left:7px;opacity:.6}.filter:hover{border-color:#9070ca}.filter.is-active{background:var(--lime);border-color:var(--lime);color:#191722}.catalog-hint{color:#87808f;white-space:nowrap;font-size:10px;letter-spacing:1.2px;font-weight:900}.catalog-hint span{color:var(--lime)}
+/* Товары */
+.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}.product-card{width:100%;text-align:left;display:flex;flex-direction:column;min-width:0;position:relative;padding:0;background:#1a1822;border:1px solid #42394d;border-radius:17px;color:var(--text);overflow:hidden;isolation:isolate;transition:transform .28s,border-color .28s,box-shadow .28s}.product-card:hover{transform:translateY(-6px);border-color:#a57be3;box-shadow:0 20px 60px #09071189,0 0 0 1px #aa79fa30}.product-card:active{transform:translateY(-2px) scale(.993)}.product-card[hidden]{display:none}.product-art{height:202px;min-height:202px;position:relative;display:block;overflow:hidden;border-bottom:1px solid #ffffff14}.product-art:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,#ffffff14,transparent 70%);pointer-events:none}.art-label{position:absolute;z-index:3;top:14px;left:14px;font:900 10px var(--body);letter-spacing:1.1px;border-radius:5px;padding:5px 8px;background:#150e2199;color:#fff;border:1px solid #ffffff29}.product-info{padding:22px 20px 20px;display:flex;flex:1;flex-direction:column}.product-eyebrow{color:#b6a2d0;font-size:9px;letter-spacing:1.3px;font-weight:900;text-transform:uppercase;display:block;margin-bottom:9px}.product-title{font:850 16px/1.3 var(--head);letter-spacing:-.6px;display:block;min-height:42px}.product-description{display:block;color:#a7a0b4;font-size:12px;line-height:1.65;margin-top:9px;min-height:58px}.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:auto;padding-top:18px;border-top:1px solid #ffffff12}.product-cost{font:900 24px/1.1 var(--head);letter-spacing:-1.4px}.product-cost small{font:700 10px var(--body);color:#93899f;letter-spacing:0;display:block;margin-top:4px}.product-plus{display:flex;gap:6px;align-items:center;font-size:11px;font-weight:900;color:var(--lime)}.plus-icon{height:35px;width:35px;border:1px solid #64754f;border-radius:7px;display:grid;place-items:center;font-size:23px;line-height:1;background:#283022;color:var(--lime);transition:background .2s,color .2s,transform .25s}.product-card:hover .plus-icon{background:var(--lime);color:#1e1827;transform:rotate(90deg)}.product-card.featured-card{grid-column:span 2;display:grid;grid-template-columns:1.04fr .96fr;background:linear-gradient(130deg,#332054,#1b1928)}.featured-card .product-art{height:auto;min-height:100%;border-bottom:0;border-right:1px solid #ffffff23;order:2}.featured-card .product-info{padding:32px;order:1;justify-content:center}.featured-card .product-title{font-size:clamp(20px,2vw,29px);min-height:auto;margin:8px 0}.featured-card .product-description{font-size:13px;max-width:250px;margin-bottom:15px}.featured-card .product-cost{font-size:31px}.featured-card .product-bottom{margin-top:26px}.featured-card .product-eyebrow{color:var(--lime)}.featured-card .product-plus{white-space:nowrap}.featured-card .plus-icon{background:var(--lime);color:#171225}.featured-card .art-label{background:var(--lime);color:#14111e;border:0}
+/* Иллюстрации товаров: все элементы созданы средствами CSS */
+.art-panel{background:radial-gradient(circle at 70% 35%,#9749bb,#4e2787 47%,#241836)}.art-panel.about{background:radial-gradient(circle at 50% 15%,#bd6bdc,#6b3498 50%,#251c46)}.art-panel.pc{background:radial-gradient(circle at 70% 20%,#7858db,#263d7d 58%,#191b46)}.panel-art-card{position:absolute;left:13%;right:13%;top:34%;height:70px;display:flex;align-items:center;gap:12px;background:#1e142b;border:2px solid #d4b2ff;border-radius:9px;transform:rotate(-8deg);box-shadow:9px 12px 0 #070a1970,0 0 35px #e3a2f640}.about .panel-art-card{transform:rotate(6deg);border-color:#ffaff1}.pc .panel-art-card{transform:rotate(-5deg);border-color:#9dcaff}.panel-visual-icon{height:46px;width:47px;flex:0 0 47px;border-radius:7px;background:#ad7ae5;color:#261235;font-size:27px;display:grid;place-items:center;margin-left:9px;line-height:1}.about .panel-visual-icon{background:#ffb5e0}.pc .panel-visual-icon{background:#9dcbff;font-size:24px}.panel-visual-copy{font:900 17px var(--head);letter-spacing:-.9px;color:white;white-space:nowrap}.pc .panel-visual-copy{font-size:13px}.panel-art-card:after{content:"↗";position:absolute;right:8px;top:6px;font-size:16px;color:var(--lime)}.panel-art-spark{position:absolute;top:18%;right:14%;font-size:65px;color:#c8ff68ba;transform:rotate(15deg)}.about .panel-art-spark{color:#ffd4f4}.pc .panel-art-spark{color:#9fcbff}.panel-art-lines{position:absolute;bottom:20px;right:24px;display:flex;gap:5px}.panel-art-lines i{height:3px;width:16px;background:#d3c5ff80;transform:skew(-18deg)}
+.art-banner{background:linear-gradient(118deg,#302060,#7746bf 55%,#251236)}.banner-mesh{position:absolute;inset:-30%;background:repeating-linear-gradient(130deg,transparent 0 19px,#d6b0ff14 20px 22px);transform:rotate(-10deg)}.banner-sun{position:absolute;width:205px;height:205px;border:23px solid #b8fb6590;border-radius:50%;top:-48px;right:-40px;box-shadow:0 0 0 23px #d4a1ff33,0 0 40px #d1ff6b77}.banner-art-text{position:absolute;left:20px;bottom:28px;font:900 30px/1.1 var(--head);letter-spacing:-2px;text-shadow:4px 5px 0 #4a1e8c}.banner-art-text span{color:var(--lime);display:block}.banner-bolt{position:absolute;color:#ddc6ff;right:35px;bottom:28px;font-size:34px}
+.art-logo{background:radial-gradient(circle at 52% 46%,#855ce0 0,#3b2369 52%,#1e1834 100%)}.logo-orbit{position:absolute;border:2px solid #e6dbff48;width:202px;height:202px;left:calc(50% - 101px);top:calc(50% - 101px);border-radius:50%;box-shadow:0 0 0 20px #b17bff15,0 0 0 40px #b17bff12}.logo-letter{position:absolute;inset:0;display:grid;place-items:center;color:var(--lime);font:900 125px/1 var(--head);letter-spacing:-20px;padding-right:20px;text-shadow:7px 9px 0 #2a1744,-5px -4px 0 #e2caff}.logo-star{position:absolute;top:37px;right:67px;font-size:39px;color:#ffe7ff;text-shadow:0 0 18px #fff}
+.art-offline{background:#2c1c4d}.offline-art-window{position:absolute;left:12%;right:12%;top:22%;height:64%;border:3px solid #c8ff68;border-radius:7px;box-shadow:8px 9px 0 #141020aa;overflow:hidden;background:radial-gradient(circle at 75% 45%,#9950d3,#4b2889 57%,#251735)}.offline-ring{position:absolute;width:185px;height:185px;right:-35px;top:-55px;border:15px solid #c8ff6866;border-radius:50%;box-shadow:0 0 0 17px #c8ff681a}.offline-text{position:absolute;left:14px;bottom:14px;font:900 21px/1.15 var(--head);letter-spacing:-1px}.offline-text strong{display:block;color:var(--lime)}.offline-moon{position:absolute;right:19px;top:12px;font-size:39px;color:var(--lime)}.offline-bottom{position:absolute;bottom:0;left:0;right:0;height:8px;background:var(--lime)}
+.art-emote{background:linear-gradient(135deg,#ef8bbd,#996bdb 60%,#57359a)}.emote-character{position:absolute;display:flex;align-items:center;justify-content:center;flex-direction:column;border:4px solid #39205e;box-shadow:5px 8px 0 #1c173d8c}.emote-main{height:118px;width:118px;top:40px;left:calc(50% - 59px);border-radius:38px 38px 44px 44px;transform:rotate(-7deg);background:var(--lime);z-index:2}.emote-side{width:63px;height:63px;border-radius:24px;top:22px;right:26px;transform:rotate(16deg);background:#ffd0ec;font-size:27px;color:#a63275}.emote-bottom{width:68px;height:68px;border-radius:22px;bottom:13px;left:22px;transform:rotate(13deg);background:#ffbb8c;font-size:29px;color:#7f3c74}.emote-eyes{font:900 38px var(--head);letter-spacing:9px;color:#37204e;line-height:1;margin-left:8px}.emote-mouth{font:900 45px var(--body);color:#37204e;line-height:.65;transform:rotate(-10deg);margin-top:5px}.emote-mini-star{position:absolute;bottom:16px;right:24px;color:var(--lime);font-size:38px}
+.art-kit{background:radial-gradient(circle at 70% 45%,#8c4acc,#422268 55%,#2c1d48)}.kit-poster{position:absolute;inset:25px 18px 38px 26px;background:linear-gradient(110deg,#4c297a,#753eb3);border:2px solid #d8b3ff;border-radius:6px;transform:rotate(-9deg);box-shadow:10px 13px 0 #1c1238ad;overflow:hidden}.kit-poster:before{content:"";width:165px;height:165px;border:18px solid #c8ff6880;position:absolute;right:-50px;top:-70px;border-radius:50%}.kit-poster strong{position:absolute;left:15px;bottom:25px;font:900 23px/1.1 var(--head);letter-spacing:-1px}.kit-poster strong em{color:var(--lime);font-style:normal}.kit-poster small{position:absolute;left:16px;top:12px;font:900 10px var(--body);letter-spacing:1px;color:#dfd0fa}.kit-sticker{position:absolute;right:5px;bottom:11px;background:var(--lime);color:#211637;padding:7px 10px;border-radius:7px;font:900 12px var(--head);transform:rotate(11deg);z-index:3;box-shadow:0 4px 0 #38235e}.kit-emote{position:absolute;right:20px;top:20px;width:50px;height:50px;display:grid;place-items:center;background:#fcbfe2;border:3px solid #2a1a4b;border-radius:17px;font:900 27px var(--body);transform:rotate(15deg);z-index:3;color:#7c2f88}
+.catalog-under{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:30px;padding:17px 0;border-top:1px solid var(--line);color:#aea7b8;font-size:12px}.catalog-under-star{font-size:19px;color:var(--lime);margin-right:8px}.text-cart{background:transparent;color:var(--lime);border:0;font-size:12px;font-weight:900;padding:10px}.text-cart span{margin-left:8px}
+/* Выделенный комплект */
+.bundle-section{padding:110px 0;background:var(--lime);color:#221930;position:relative;overflow:hidden}.bundle-section:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(130deg,transparent 0,transparent 100px,#2418320d 101px 102px);pointer-events:none}.bundle-layout{display:grid;grid-template-columns:1fr .9fr;align-items:center;gap:70px;position:relative}.bundle-section .section-kicker{color:#4d2b83}.bundle-section .kicker-line{background:#4d2b83}.bundle-topline{font-size:13px;font-weight:900;letter-spacing:2px}.bundle-topline span{font-size:26px;color:#8550d7;margin-left:9px}.bundle-copy h2{font:900 clamp(35px,4vw,61px)/1.18 var(--head);letter-spacing:-3.5px;margin:16px 0 20px}.bundle-period{color:#8952d9}.bundle-copy>p{font-size:15px;line-height:1.85;color:#4e435b;max-width:475px}.bundle-list{display:flex;gap:10px;flex-wrap:wrap;margin:28px 0 35px;max-width:490px}.bundle-list span{border:1px solid #21162e69;padding:9px 12px;border-radius:6px;font-size:11px;font-weight:900;white-space:nowrap}.bundle-buy{display:flex;align-items:end;gap:35px;flex-wrap:wrap}.bundle-buy small{display:block;font-size:10px;font-weight:900;letter-spacing:1.4px;margin-bottom:5px}.bundle-buy strong{font:900 35px var(--head);letter-spacing:-2px}.bundle-display{height:445px;position:relative;display:grid;place-items:center}.bundle-screen{width:92%;height:69%;transform:perspective(700px) rotate(-8deg) rotateY(-7deg);border:7px solid #25173c;background:#473078;box-shadow:20px 22px 0 #54388e,30px 35px 0 #1f173f5c;overflow:hidden;border-radius:12px}.bundle-screen-top{height:27px;background:#2a1c49;display:flex;align-items:center;padding:0 10px;gap:5px}.bundle-screen-top i{height:6px;width:6px;background:#b783ff;border-radius:50%}.bundle-screen-top span{margin-left:auto;color:#d9c4ff;font-size:9px;font-weight:800;letter-spacing:1px}.bundle-screen-center{position:relative;height:calc(100% - 58px);background:radial-gradient(circle at 55% 45%,#b871f3,#532a93 65%,#291b4c);overflow:hidden}.bundle-screen-orb{position:absolute;top:-90px;right:-10px;width:300px;height:300px;border:29px solid #c8ff6849;border-radius:50%;box-shadow:0 0 0 33px #c8ff6828}.bundle-screen-logo{position:absolute;top:8%;left:10%;font:900 130px var(--head);color:var(--lime);letter-spacing:-14px;text-shadow:7px 9px 0 #302055}.bundle-screen-logo span{font:33px var(--body);position:absolute;top:-4px;right:-13px;color:#ffe3ff}.bundle-screen-title{position:absolute;right:23px;bottom:12px;color:#f7e9ff;text-shadow:3px 4px 0 #241339;font:900 27px/1.08 var(--head);letter-spacing:-1px;text-align:right}.bundle-screen-bottom{height:31px;background:#211537;color:var(--lime);display:flex;align-items:center;justify-content:space-between;padding:0 13px;font-size:9px;font-weight:900;letter-spacing:1px}.bundle-mini-panel{position:absolute;bottom:22px;left:-10px;z-index:2;background:#33204c;border:3px solid #d0a6ff;border-radius:8px;color:white;transform:rotate(9deg);font:900 15px var(--head);padding:16px 18px;box-shadow:8px 10px 0 #2f1f4636}.bundle-mini-panel>span{color:var(--lime);margin-right:8px}.bundle-mini-panel>b{color:var(--lime);margin-left:20px}.bundle-mini-emote{position:absolute;right:2%;bottom:6%;width:95px;height:95px;background:#ffafd9;border:5px solid #311f47;border-radius:30px;transform:rotate(14deg);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:3;box-shadow:7px 9px 0 #36234254;color:#56318b}.emoji-eyes{font:900 47px var(--head);letter-spacing:8px;line-height:.9}.emoji-smile{font:900 51px var(--body);line-height:.6}.bundle-sticker{position:absolute;right:-2px;top:10px;background:#25133c;color:var(--lime);padding:17px 20px;z-index:2;border-radius:8px;transform:rotate(10deg);font:900 14px/1.2 var(--head);text-align:center;box-shadow:7px 7px 0 #63438c}.bundle-burst{position:absolute;left:1%;top:10px;color:#7d3cc4;font-size:75px;z-index:3}
+/* Процесс, вопросы, футер */
+.how-section{background:#17151f}.steps-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.step{position:relative;background:#201b2a;border:1px solid #423948;padding:24px 25px 31px;border-radius:14px;min-height:300px}.step-head{display:flex;justify-content:space-between;font:900 12px var(--head);color:#a895ca}.step-head span:last-child{color:var(--lime);font-size:20px}.step-visual{height:125px;display:grid;place-items:center;font:900 94px/1 var(--head);line-height:1}.step-visual-one{color:var(--lime);text-shadow:8px 0 0 #9a69e5}.step-visual-two{color:#a87afa;transform:rotate(-12deg)}.step-visual-three{color:#f7a1d4;text-shadow:8px 9px 0 #724ea7}.step h3{font:900 17px var(--head);letter-spacing:-.6px;margin:8px 0 10px}.step p{color:#aca6b8;font-size:12px;line-height:1.8;margin:0;max-width:340px}.faq-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}.faq-layout h2{margin:0 0 18px}.faq-layout>div:first-child>p{color:#ada6bb;max-width:370px;line-height:1.8}.faq-list{border-top:1px solid #474052}.faq-list details{border-bottom:1px solid #474052}.faq-list summary{cursor:pointer;padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;list-style:none;font-size:14px;font-weight:850}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary span{flex:0 0 26px;width:26px;height:26px;display:grid;place-items:center;color:var(--lime);border:1px solid #62526c;border-radius:50%;font-size:18px;transition:transform .2s}.faq-list details[open] summary span{transform:rotate(45deg)}.faq-list p{color:#a9a2b2;line-height:1.8;margin:0 30px 23px 0;font-size:13px}.bottom-cta{background:#2c2050;position:relative;overflow:hidden}.bottom-cta-inner{min-height:310px;display:flex;align-items:center;justify-content:space-between;gap:30px;position:relative}.bottom-cta-inner h2{position:relative;z-index:2;font:900 clamp(29px,3.4vw,51px)/1.24 var(--head);letter-spacing:-2.5px;margin:10px 0}.bottom-cta-inner h2 span{color:var(--lime)}.bottom-eyebrow{color:#d3c7e2;font-size:10px;letter-spacing:1.5px;font-weight:900}.bottom-cta-inner .button{z-index:2}.bottom-orbit{position:absolute;right:21%;font-size:320px;line-height:1;color:#8362bf40;transform:rotate(-22deg);z-index:0;top:-45px}.site-footer{background:#121019;padding:57px 0 22px}.footer-main{display:flex;justify-content:space-between;align-items:start;gap:45px;padding-bottom:57px}.footer-main p{color:#9790a4;font-size:12px;line-height:1.8;margin-top:23px}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:15px 36px;padding-top:10px;font-size:12px;color:#b6afc1;font-weight:750}.up-link{font-size:12px;font-weight:900;color:var(--lime);padding-top:10px}.footer-bottom{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #30293a;padding-top:20px;font-size:10px;color:#8d8498;letter-spacing:.3px}
+/* Корзина */
+.cart-overlay{position:fixed;inset:0;background:#05040bbd;z-index:70;backdrop-filter:blur(6px);animation:fadeIn .2s}.cart-overlay[hidden]{display:none}.cart-drawer{position:fixed;right:0;top:0;bottom:0;width:min(490px,100%);z-index:71;background:#17131f;border-left:1px solid #50435e;box-shadow:-20px 0 90px #07050c99;transform:translateX(110%);visibility:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),visibility .35s;display:flex;flex-direction:column;color:var(--text)}.cart-drawer.open{transform:translateX(0);visibility:visible}.drawer-top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:28px 30px 25px;border-bottom:1px solid #45394d}.drawer-overline{font-size:10px;font-weight:900;color:var(--lime);letter-spacing:1.5px}.drawer-top h2{font:900 28px var(--head);letter-spacing:-1.5px;margin:8px 0 0}.drawer-top h2 span{color:var(--lime)}.icon-close{width:42px;height:42px;display:grid;place-items:center;color:#e6d9ed;background:#2a2235;border:1px solid #57475e;border-radius:8px;font-size:20px}.icon-close:hover{border-color:var(--lime)}.drawer-content{display:flex;flex-direction:column;flex:1;min-height:0;overflow-y:auto}.drawer-content[hidden]{display:none}.cart-items{padding:24px 27px 5px;flex:1}.empty-cart{padding:60px 12px;text-align:center;display:flex;align-items:center;flex-direction:column}.empty-symbol{width:100px;height:100px;border-radius:28px;background:#2d2440;display:grid;place-items:center;color:var(--lime);font-size:65px;transform:rotate(-7deg);border:1px solid #5f487e}.empty-cart h3{font:900 16px var(--head);margin:28px 0 10px}.empty-cart p{max-width:290px;font-size:13px;color:#9e96aa;line-height:1.8}.empty-cart button{margin-top:10px}.cart-item{display:flex;gap:14px;padding:17px 0;border-bottom:1px solid #352b40}.cart-item-art{flex:0 0 70px;height:72px;border-radius:9px;background:radial-gradient(circle at top right,#a36ae7,#392255);position:relative;overflow:hidden;display:grid;place-items:center;font:900 37px var(--head);color:var(--lime)}.cart-item-art.panel{background:linear-gradient(130deg,#5e327d,#211b4a)}.cart-item-art.logo{background:radial-gradient(circle,#8a51d0,#37215b)}.cart-item-art.offline{background:radial-gradient(circle,#552f8d,#1b1a39)}.cart-item-art.emoji{background:linear-gradient(130deg,#ff96c3,#9553b2);color:#4c1b6c}.cart-item-art.bundle{background:linear-gradient(130deg,#c8ff68,#8d5de2);color:#24173a}.cart-item-art .tiny-icon{font-size:28px}.cart-item-details{min-width:0;flex:1}.cart-item-name{display:block;font-size:13px;font-weight:900;line-height:1.4}.cart-item-unit{display:block;font-size:12px;color:#a29aaf;margin:4px 0 11px}.cart-item-row{display:flex;align-items:center;justify-content:space-between;gap:8px}.cart-item-row>strong{font:900 16px var(--head);white-space:nowrap}.quantity-controls{display:flex;align-items:center;border:1px solid #5c506b;border-radius:8px;overflow:hidden}.quantity-controls button{width:31px;height:30px;border:0;background:#261f33;color:var(--text);font-size:20px;line-height:1}.quantity-controls button:hover{background:#54416f}.quantity-controls span{min-width:26px;text-align:center;font-size:12px;font-weight:900}.cart-remove{background:none;border:0;color:#9b8ba4;font-size:11px;padding:5px 0 0;text-decoration:underline;text-underline-offset:3px}.cart-remove:hover{color:#f4a6c1}.cart-bottom{padding:25px 28px 27px;margin-top:auto;background:#231a31;border-top:1px solid #453653}.cart-total-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}.cart-total-row>span{font:900 13px var(--head)}.cart-total-row small{display:block;font:600 11px var(--body);color:#a49aaf;margin-top:5px}.cart-total-row>strong{font:900 25px var(--head);letter-spacing:-1px;white-space:nowrap}.checkout-button{width:100%;justify-content:space-between}.cart-bottom>p{font-size:11px;line-height:1.7;color:#a399ad;margin:13px 0 0}.checkout-view{padding:26px 28px 35px}.back-button{border:0;background:transparent;color:#d3c4e5;text-align:left;font-size:12px;padding:0 0 22px;font-weight:850}.back-button:hover{color:var(--lime)}.checkout-view>h3{font:900 21px var(--head);letter-spacing:-1px;margin:5px 0 12px}.checkout-view>p{color:#aaa2b6;font-size:12px;line-height:1.8;margin:0 0 25px}.checkout-view form{display:flex;flex-direction:column;gap:17px}.checkout-view label{display:block;color:#e7e0ef;font-size:12px;font-weight:800}.checkout-view label>span{color:var(--lime)}.checkout-view label small{font-size:10px;color:#9b91a6}.checkout-view input,.checkout-view textarea,.order-result textarea{display:block;width:100%;border-radius:8px;border:1px solid #554562;background:#241c2f;color:var(--text);margin-top:8px;padding:13px;font-size:13px;resize:vertical;outline:none}.checkout-view input:focus,.checkout-view textarea:focus{border-color:var(--lime)}.checkout-view input::placeholder,.checkout-view textarea::placeholder{color:#83758e}.checkout-view form .button{margin-top:8px}.order-result{margin-top:25px;padding-top:20px;border-top:1px solid #4e425c}.order-result[hidden]{display:none}.result-label{color:var(--lime);font:900 14px var(--head)}.order-result p{font-size:12px;line-height:1.7;color:#b3a7bc}.order-result textarea{min-height:200px;color:#d3cadd}.order-result button{margin-top:14px;width:100%;justify-content:space-between}.copy-hint{font-size:12px;color:var(--lime);margin-top:10px}.toast{position:fixed;z-index:90;bottom:28px;left:50%;transform:translate(-50%,30px);opacity:0;pointer-events:none;background:#2b2138;border:1px solid #8b78a2;color:white;border-radius:11px;padding:12px 13px 12px 16px;box-shadow:0 17px 50px #0009;min-width:min(420px,calc(100vw - 32px));display:flex;align-items:center;justify-content:space-between;gap:14px;transition:transform .25s,opacity .25s;font-size:12px;font-weight:800}.toast[hidden]{display:none}.toast.show{opacity:1;transform:translate(-50%,0);pointer-events:auto}.toast>div{display:flex;align-items:center;gap:9px;min-width:0}.toast-check{display:grid;place-items:center;flex:0 0 22px;width:22px;height:22px;background:var(--lime);color:#1d1b28;border-radius:50%}.toast-action{border:0;background:var(--lime);color:#171521;border-radius:7px;padding:9px 11px;font-size:11px;font-weight:900;white-space:nowrap}.mobile-cart-bar{display:none}
+@keyframes marquee{to{transform:translateX(-50%)}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}@keyframes bump{50%{transform:scale(1.25)}}
+@media(max-width:1100px){.container{width:min(1240px,calc(100% - 52px))}.header-inner{gap:15px}.desktop-nav{gap:18px}.hero h1{font-size:clamp(34px,4vw,54px)}.hero-inner{gap:15px}.hero-stage{transform:translate(6px,-10px)}.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.featured-card{grid-column:span 2}.catalog-hint{display:none}.bundle-layout{gap:20px}}
+@media(max-width:780px){.section{padding:75px 0}.container{width:calc(100% - 36px)}.site-header .header-inner{height:71px}.brand-symbol{width:39px;height:39px;font-size:27px}.brand-word{font-size:17px}.desktop-nav{display:none}.header-cart{margin-left:auto}.menu-button{display:block}.mobile-nav:not([hidden]){display:flex;flex-direction:column;background:#20192a;border-top:1px solid #4b3a5a;padding:16px 25px 23px;gap:0}.mobile-nav a,.mobile-nav button{display:block;text-align:left;padding:13px 5px;border:0;border-bottom:1px solid #4e405b;color:white;background:none;font-size:14px;font-weight:850}.mobile-nav button span{color:var(--lime)}.hero{padding-top:64px}.hero-inner{grid-template-columns:1fr;min-height:auto}.hero-content{padding-bottom:0}.hero h1{font-size:clamp(37px,7.6vw,62px)}.hero-stage{margin:35px auto 26px;width:min(600px,100%);min-height:445px;transform:translateX(0)}.mock-stream{max-width:500px}.mock-big-v{font-size:190px}.mock-scene-text{font-size:25px}.preview-floating-one{right:0}.preview-floating-two{left:0}.hero-edge{padding:20px 0}.section-heading{align-items:start;flex-direction:column;gap:18px}.section-heading>p{max-width:530px}.section-heading h2,.faq-layout h2{font-size:clamp(30px,5.4vw,45px)}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bundle-layout{grid-template-columns:1fr}.bundle-copy h2{font-size:clamp(35px,7vw,55px)}.bundle-display{height:400px;width:min(620px,100%);margin:auto}.faq-layout{grid-template-columns:1fr;gap:32px}.bottom-cta-inner{min-height:300px}.steps-grid{grid-template-columns:1fr 1fr}.steps-grid .step:last-child{grid-column:span 2}.footer-main{flex-wrap:wrap}.bottom-orbit{right:-10%}}
+@media(max-width:520px){html{scroll-padding-top:78px}.container{width:calc(100% - 30px)}.site-header .header-inner{height:64px}.brand-symbol{width:37px;height:37px}.brand-word{font-size:16px}.brand-word small{font-size:7px}.header-cart{height:42px;padding:0 9px}.header-cart>span:not(.cart-count){display:none}.header-cart svg{width:20px}.cart-count{height:24px;min-width:24px}.menu-button{height:42px;width:42px}.hero{padding-top:50px}.eyebrow{font-size:8px;letter-spacing:.8px;padding:9px}.eyebrow-spark{font-size:11px;margin-left:0}.hero h1{font-size:clamp(31px,8.25vw,43px);letter-spacing:-2.3px;margin:27px 0 20px}.hero-description{font-size:14px;line-height:1.85}.hero-buttons{gap:9px}.hero-buttons .button{flex:1;min-height:52px;padding:0 13px;gap:5px;font-size:11px;white-space:normal;text-align:center}.hero-proof{margin-top:29px;gap:9px;font-size:10px}.hero-proof-line{margin:0 4px}.hero-star{font-size:24px}.hero-stage{min-height:300px;margin:28px auto 15px}.mock-stream{width:94%;border-radius:10px;transform:perspective(700px) rotateY(-6deg) rotate(-4deg)}.mock-stream-top{height:27px;padding:0 9px;font-size:6px}.mock-stream-body{height:calc(100% - 27px)}.mock-disc-1{width:240px}.mock-disc-2{width:155px}.mock-big-v{font-size:130px;letter-spacing:-18px}.mock-big-v span{font-size:20px}.mock-scene-text{font-size:16px;bottom:28px;left:12px}.mock-camera{border-width:2px;right:10px;bottom:28px}.mock-camera>span{font-size:6px;padding:2px}.mock-bottom{height:18px;font-size:5px}.mock-live{top:9px;left:9px;font-size:7px;padding:4px 6px}.hero-asterisk-top{font-size:48px;top:3px;left:2px}.hero-asterisk-bottom{font-size:30px;bottom:0;right:5px}.preview-floating-one{top:0;padding:8px;font-size:7px;right:0}.preview-floating-two{bottom:0;left:0;padding:7px}.float-heart{width:25px;height:25px;font-size:15px}.preview-floating-two b{font-size:7px}.preview-floating-two small{font-size:7px}.hero-edge{font-size:8px;letter-spacing:.6px}.hero-edge span:last-child{white-space:nowrap}.marquee{height:46px}.marquee span{font-size:15px}.marquee b{font-size:19px}.section-heading h2,.faq-layout h2{font-size:clamp(27px,6.9vw,36px);letter-spacing:-1.5px}.section-heading>p{font-size:13px}.section-kicker{font-size:9px;margin-bottom:20px}.filters{gap:7px}.filter{font-size:11px;padding:9px 11px}.catalog-toolbar{margin-bottom:19px}.product-grid{gap:11px}.product-card{border-radius:11px}.product-art{height:150px;min-height:150px}.art-label{font-size:7px;padding:3px 6px;top:9px;left:9px}.product-info{padding:16px 12px}.product-eyebrow{font-size:8px;letter-spacing:.5px;margin-bottom:7px}.product-title{font-size:12px;letter-spacing:-.6px;min-height:32px}.product-description{font-size:10px;min-height:70px;line-height:1.6;margin-top:7px}.product-bottom{padding-top:12px}.product-cost{font-size:17px}.product-cost small{font-size:8px}.product-plus{font-size:0}.plus-icon{width:32px;height:32px;font-size:20px}.product-card.featured-card{grid-column:span 2;min-height:238px}.featured-card .product-art{min-height:100%;height:auto}.featured-card .product-info{padding:22px 14px}.featured-card .product-title{font-size:17px}.featured-card .product-description{font-size:10px;min-height:0;margin-bottom:8px}.featured-card .product-cost{font-size:21px}.featured-card .product-bottom{margin-top:5px;padding-top:15px}.featured-card .product-plus{font-size:0}.panel-art-card{height:49px;left:8%;right:7%}.panel-visual-icon{width:28px;height:28px;flex-basis:28px;margin-left:5px;font-size:16px}.panel-visual-copy{font-size:10px}.pc .panel-visual-copy{font-size:9px}.panel-art-spark{font-size:45px}.banner-art-text{font-size:21px;left:11px}.banner-sun{height:150px;width:150px}.logo-orbit{width:155px;height:155px;left:calc(50% - 77px);top:calc(50% - 77px)}.logo-letter{font-size:100px}.logo-star{top:30px;right:30px;font-size:28px}.offline-art-window{top:27%;height:58%}.offline-text{font-size:13px;left:7px;bottom:6px}.offline-moon{font-size:26px}.emote-main{height:88px;width:88px;left:calc(50% - 44px);top:35px;border-radius:27px}.emote-eyes{font-size:28px}.emote-mouth{font-size:32px}.emote-side{height:47px;width:47px;right:11px;top:17px}.emote-bottom{height:52px;width:52px;left:11px}.kit-poster{inset:24px 7px 29px 7px}.kit-poster strong{font-size:15px;left:9px}.kit-sticker{font-size:9px;padding:5px}.kit-emote{width:40px;height:40px;right:2px}.catalog-under{font-size:10px;align-items:start}.catalog-under .text-cart{min-width:120px}.bundle-section{padding:72px 0 30px}.bundle-topline{font-size:10px}.bundle-copy h2{font-size:clamp(32px,8vw,43px)}.bundle-copy>p{font-size:13px}.bundle-list{gap:8px;margin:24px 0}.bundle-list span{font-size:10px;padding:7px}.bundle-buy{gap:13px;align-items:center;justify-content:space-between}.bundle-buy strong{font-size:27px}.bundle-buy .button{font-size:11px;padding:0 12px;min-height:50px;gap:7px}.bundle-display{height:290px}.bundle-screen-logo{font-size:80px}.bundle-screen-title{font-size:18px}.bundle-screen{border-width:4px}.bundle-mini-panel{font-size:9px;padding:10px}.bundle-mini-emote{width:62px;height:62px;border-radius:20px}.emoji-eyes{font-size:29px}.emoji-smile{font-size:32px}.bundle-sticker{font-size:9px;padding:9px}.bundle-burst{font-size:48px}.steps-grid{grid-template-columns:1fr;gap:12px}.steps-grid .step:last-child{grid-column:auto}.step{min-height:auto}.step-visual{height:90px;font-size:72px}.faq-list summary{font-size:12px;line-height:1.6}.bottom-cta-inner{min-height:270px;flex-direction:column;align-items:start;justify-content:center;gap:19px}.bottom-cta-inner h2{font-size:clamp(27px,7vw,36px)}.bottom-orbit{font-size:250px;right:-90px}.footer-main{padding-bottom:35px;gap:30px}.footer-main>div:first-child{width:100%}.footer-links{gap:12px 20px}.footer-bottom{flex-direction:column;gap:8px;font-size:9px;padding-bottom:60px}.cart-drawer{width:100%}.drawer-top{padding:21px}.cart-items{padding:14px 20px}.cart-bottom{padding:20px}.checkout-view{padding:20px}.toast{bottom:80px}.mobile-cart-bar:not([hidden]){display:flex;align-items:center;justify-content:space-between;gap:15px;position:fixed;bottom:10px;left:10px;right:10px;z-index:65;background:var(--lime);color:#17131f;border:1px solid #edfcb6;border-radius:12px;padding:12px 18px;box-shadow:0 10px 40px #080512b8;font-size:12px;font-weight:900}.mobile-cart-bar span{display:flex;align-items:center;gap:8px}.mobile-cart-bar svg{width:18px;height:18px}.mobile-cart-bar b{background:#2b1f40;color:white;border-radius:50%;min-width:19px;height:19px;display:grid;place-items:center;font-size:10px}.mobile-cart-bar strong{font:900 13px var(--head)}.cart-drawer.open~.mobile-cart-bar{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+
+/* Каталог наборов v4: фирменные мини-макеты, крупные карточки для выбора */
+.product-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.product-card.featured-card{grid-column:span 3;grid-template-columns:1.08fr 1fr;min-height:310px}
+.product-card:not(.featured-card) .product-art{height:232px;min-height:232px}
+.product-card:not(.featured-card) .product-description{min-height:82px}
+.product-card:not(.featured-card) .product-title{font-size:clamp(14px,1.15vw,18px);min-height:50px}
+.bundle-panels-preview{position:absolute;z-index:2;top:56px;left:15%;width:70%;transform:rotate(-7deg);display:grid;gap:5px}
+.bundle-panels-preview>span{height:28px;border:1px solid #d7b8ff;border-radius:5px;background:#1b1336;box-shadow:4px 4px 0 #120c2b88;color:#f5eaff;font:900 10px/26px var(--head);letter-spacing:-.4px;padding:0 11px;white-space:nowrap}
+.bundle-panels-preview>span:nth-child(2){border-color:#caff83;background:#402273;transform:translateX(8px)}
+.bundle-panels-preview>span:nth-child(3){background:#422985;transform:translateX(17px)}
+.bundle-panels-preview>span:nth-child(4){background:#201c46;transform:translateX(5px)}
+.bundle-panels-preview>span:nth-child(5){background:#472a87;transform:translateX(13px)}
+.bundle-panels-preview b{float:right;color:var(--lime)}
+.bundle-art-spark{position:absolute;right:8%;top:20%;font-size:62px;color:#c8ff68a8}
+.art-panels-kit{background:radial-gradient(circle at 80% 20%,#aa65dc,#50258e 48%,#22143b)}
+.art-identity-kit{background:linear-gradient(132deg,#2b1a51,#7642ac 60%,#2f174e)}
+.identity-banner{position:absolute;top:51px;left:12%;right:12%;height:126px;border:2px solid #dcc0ff;border-radius:8px;background:radial-gradient(circle at 90% 30%,#ad6fe1,#512a93 65%,#201845);transform:rotate(-4deg);box-shadow:10px 12px 0 #120e2ac4;overflow:hidden;padding:12px}
+.identity-banner:before{content:"";position:absolute;width:150px;height:150px;border:17px solid #ccff7375;border-radius:50%;right:-35px;top:-40px}
+.identity-banner small{position:relative;z-index:1;color:#dcc9fc;font:800 8px var(--body);letter-spacing:1.8px}
+.identity-banner>b{position:absolute;left:12px;bottom:11px;font:900 20px/1.06 var(--head);letter-spacing:-1px;text-shadow:3px 3px 0 #211040}
+.identity-banner em{font-style:normal;color:var(--lime)}
+.identity-logo{position:absolute;right:8%;top:38px;width:68px;height:68px;display:grid;place-items:center;border-radius:50%;border:4px solid #c4ff68;background:#24173a;color:var(--lime);font:900 42px var(--head);transform:rotate(12deg);box-shadow:3px 7px 0 #120b28aa}
+.identity-logo span{position:absolute;font:16px var(--body);right:5px;top:3px}
+.identity-offline{position:absolute;bottom:17px;left:18%;background:#1e1739;color:var(--lime);border:2px solid #bb9fff;transform:rotate(6deg);box-shadow:7px 9px 0 #19102baa;border-radius:4px;padding:7px 18px;font:900 13px var(--head)}
+.art-emotes-kit{background:radial-gradient(circle at 44% 35%,#ca74b7,#8351c4 55%,#40265e)}
+.emotes-showcase{position:absolute;inset:25% 6% 17%;display:flex;align-items:center;justify-content:space-between;gap:1px;transform:rotate(-6deg)}
+.emotes-showcase i{position:relative;display:grid;place-items:center;flex:1;min-width:0;aspect-ratio:1;max-width:71px;background:#d5ff81;color:#45216e;border:3px solid #3a2056;border-radius:27%;font:900 clamp(15px,2.8vw,32px)/1 var(--head);font-style:normal;box-shadow:4px 6px 0 #20133298}
+.emotes-showcase i:nth-child(1){transform:translateY(16px) rotate(-12deg);background:#ffbddc;color:#a74286}
+.emotes-showcase i:nth-child(2){transform:translateY(-14px) rotate(9deg);background:#c6f976}
+.emotes-showcase i:nth-child(3){transform:translateY(10px) rotate(-10deg);background:#e8ccff}
+.emotes-showcase i:nth-child(4){transform:translateY(-10px) rotate(8deg);background:#ffc499}
+.emotes-showcase i:nth-child(5){transform:translateY(14px) rotate(14deg);background:#c7f0ff}
+.emotes-stars{position:absolute;bottom:18px;right:26px;font-size:25px;color:var(--lime);letter-spacing:14px}
+@media(max-width:1100px){.product-card.featured-card{grid-column:span 3}}
+@media(max-width:780px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.product-card.featured-card{grid-column:span 2}.product-card:not(.featured-card) .product-title{font-size:15px}.product-card:not(.featured-card) .product-description{min-height:65px}}
+@media(max-width:520px){.product-grid{grid-template-columns:1fr;gap:14px}.product-card.featured-card{grid-column:auto;grid-template-columns:1fr}.featured-card .product-art{order:0;min-height:215px;height:215px;border-right:0;border-bottom:1px solid #ffffff23}.featured-card .product-info{order:1;padding:22px}.featured-card .product-title{font-size:20px}.featured-card .product-cost{font-size:23px}.product-card:not(.featured-card) .product-art{height:214px;min-height:214px}.product-card:not(.featured-card) .product-title{min-height:auto;font-size:17px}.product-card:not(.featured-card) .product-description{min-height:0;margin-bottom:14px;font-size:12px}.product-card .product-plus{font-size:11px}.emotes-showcase i{font-size:28px}.identity-banner>b{font-size:22px}.bundle-panels-preview{left:18%;width:64%;top:53px}.bundle-panels-preview>span{height:25px;line-height:23px}.bundle-list span{white-space:normal}}
+
+
+/* old portfolio styles replaced below */
+.portfolio-section{padding:100px 0;background:radial-gradient(circle at 90% 0%,#6b44ff14,transparent 30%),radial-gradient(circle at 0% 100%,#c8ff6810,transparent 25%),#13111b;border-top:1px solid #ffffff0c;border-bottom:1px solid #ffffff10}
+.portfolio-heading{margin-bottom:24px}.portfolio-heading>p{max-width:380px}
+.portfolio-note{display:flex;align-items:center;gap:10px;padding:14px 16px;margin-bottom:24px;border:1px solid #3f384b;border-radius:12px;background:#1a1722;color:#cfc7da;font-size:13px;line-height:1.65}.portfolio-note span{color:var(--lime);font-size:15px}.portfolio-note strong{color:#fff}
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.portfolio-card{display:flex;flex-direction:column;gap:0;text-align:left;background:#1a1822;border:1px solid #42394d;border-radius:18px;overflow:hidden;color:#fff;padding:0;transition:transform .25s,border-color .25s,box-shadow .25s}
+.portfolio-card:hover{transform:translateY(-4px);border-color:#9d76ff;box-shadow:0 20px 60px #09071178}
+.portfolio-card-media{display:block;position:relative;background:linear-gradient(135deg,#1f1830,#12101a);aspect-ratio:4/3;overflow:hidden;border-bottom:1px solid #ffffff14}
+.portfolio-card-media img{width:100%;height:100%;object-fit:cover;display:block}
+.portfolio-card-index{position:absolute;top:12px;right:12px;display:inline-flex;align-items:center;justify-content:center;min-width:42px;height:30px;padding:0 10px;border-radius:999px;background:#12101be0;border:1px solid #ffffff24;font:800 11px var(--head);letter-spacing:1px;color:#f7f3ff}
+.portfolio-card-body{display:flex;flex-direction:column;gap:10px;padding:18px 18px 20px}
+.portfolio-card-tag{font-size:10px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;color:var(--lime)}
+.portfolio-card-title{font:800 21px/1.2 var(--head);letter-spacing:-.8px}
+.portfolio-card-desc{color:#b8b1c4;font-size:13px;line-height:1.7;min-height:66px}
+.portfolio-card-link{display:inline-flex;align-items:center;gap:10px;color:#eee4ff;font-size:12px;font-weight:800}.portfolio-card-link b{color:var(--lime)}
+
+.portfolio-backdrop{position:fixed;inset:0;background:#09070fe0;backdrop-filter:blur(8px);z-index:105}
+.portfolio-modal{position:fixed;inset:0;z-index:106;display:flex;align-items:center;justify-content:center;padding:22px}
+.portfolio-modal-panel{width:min(1120px,100%);max-height:calc(100dvh - 44px);background:#16131d;border:1px solid #5a4b70;border-radius:18px;box-shadow:0 32px 120px #000a;position:relative;overflow:hidden}
+.portfolio-close{position:absolute;top:14px;right:14px;z-index:2;width:42px;height:42px;border-radius:10px;border:1px solid #4e435f;background:#211b2c;color:#fff;font-size:16px}.portfolio-close:hover{border-color:var(--lime)}
+.portfolio-modal-content{display:grid;grid-template-columns:minmax(0,1.15fr) 320px;min-height:0}
+.portfolio-modal-image-wrap{background:#0e0b14;display:flex;align-items:center;justify-content:center;padding:26px 22px;min-height:0}.portfolio-modal-image-wrap img{max-width:100%;max-height:min(78dvh,820px);border-radius:10px;display:block;object-fit:contain;box-shadow:0 18px 80px #0008}
+.portfolio-modal-info{padding:30px 24px 24px;border-left:1px solid #2d2638;display:flex;flex-direction:column;justify-content:space-between;gap:18px;background:linear-gradient(180deg,#191520,#15121b)}
+.portfolio-modal-tag{font-size:10px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase;color:var(--lime)}
+.portfolio-modal-info h3{margin:8px 0 10px;font:800 24px/1.18 var(--head);letter-spacing:-1px}
+.portfolio-modal-info p{margin:0;color:#bcb5c8;font-size:14px;line-height:1.85}
+.portfolio-modal-controls{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:10px}.portfolio-modal-controls span{font:800 12px var(--head);color:#ddd2f0;letter-spacing:1px}
+.portfolio-nav{width:50px;height:44px;border-radius:10px;border:1px solid #514660;background:#231d2f;color:#fff;font-size:20px}.portfolio-nav:hover{border-color:var(--lime)}
+@media (max-width: 980px){.portfolio-grid{grid-template-columns:1fr}.portfolio-card-desc{min-height:0}.portfolio-modal-content{grid-template-columns:1fr}.portfolio-modal-info{border-left:none;border-top:1px solid #2d2638;padding:18px 18px 20px}.portfolio-modal-info h3{font-size:20px}.portfolio-modal-image-wrap{padding:18px}.portfolio-modal-image-wrap img{max-height:58dvh}}
+@media (max-width: 640px){.portfolio-section{padding:80px 0}.portfolio-note{display:block;font-size:12px}.portfolio-note span{display:inline-block;margin-right:7px}.portfolio-card-body{padding:16px}.portfolio-card-title{font-size:18px}.portfolio-card-desc{font-size:12px}.portfolio-modal{padding:10px}.portfolio-modal-panel{max-height:calc(100dvh - 20px)}.portfolio-close{top:10px;right:10px;width:38px;height:38px}.portfolio-modal-image-wrap img{max-height:50dvh}.portfolio-modal-info{padding:16px}.portfolio-modal-info h3{font-size:18px}.portfolio-modal-info p{font-size:12px;line-height:1.7}.portfolio-nav{width:46px;height:40px}}
+
+
+/* Showcase above catalog */
+.portfolio-section{padding:92px 0 102px;background:radial-gradient(circle at 100% 0%,#7a52ff14,transparent 28%),radial-gradient(circle at 0% 100%,#c8ff6812,transparent 22%),#13111b;border-top:1px solid #ffffff10;border-bottom:1px solid #ffffff12}
+.portfolio-heading>p{max-width:430px}.portfolio-note{display:flex;align-items:center;gap:10px;padding:14px 16px;margin-bottom:22px;border:1px solid #3f384b;border-radius:12px;background:#1a1722;color:#cfc7da;font-size:13px;line-height:1.65}.portfolio-note span{color:var(--lime);font-size:15px}.portfolio-note strong{color:#fff}
+.portfolio-toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-bottom:24px}.portfolio-filters{display:flex;gap:8px;flex-wrap:wrap}.portfolio-filter{padding:11px 16px;border-radius:999px;border:1px solid #443d4e;background:#1b1924;color:#c1b9cf;font-size:12px;font-weight:800;transition:background .2s,border-color .2s,color .2s}.portfolio-filter span{margin-left:7px;opacity:.65}.portfolio-filter:hover{border-color:#9070ca}.portfolio-filter.is-active{background:var(--lime);border-color:var(--lime);color:#191722}.portfolio-toolbar-hint{color:#87808f;white-space:nowrap;font-size:10px;letter-spacing:1.2px;font-weight:900}.portfolio-toolbar-hint span{color:var(--lime)}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.portfolio-card{display:flex;flex-direction:column;text-align:left;background:#1a1822;border:1px solid #42394d;border-radius:18px;overflow:hidden;color:#fff;padding:0;transition:transform .25s,border-color .25s,box-shadow .25s}.portfolio-card:hover{transform:translateY(-4px);border-color:#9d76ff;box-shadow:0 20px 60px #09071178}.portfolio-card[hidden]{display:none}
+.portfolio-card-media{display:block;position:relative;background:linear-gradient(135deg,#1f1830,#12101a);height:220px;overflow:hidden;border-bottom:1px solid #ffffff14}.portfolio-card-media img{width:100%;height:100%;object-fit:contain;display:block;background:radial-gradient(circle at 50% 20%,#ffffff10,transparent 42%)}.portfolio-card-index{position:absolute;top:12px;right:12px;display:inline-flex;align-items:center;justify-content:center;min-width:42px;height:30px;padding:0 10px;border-radius:999px;background:#12101be0;border:1px solid #ffffff24;font:800 11px var(--head);letter-spacing:1px;color:#f7f3ff}
+.portfolio-card-body{display:flex;flex-direction:column;gap:9px;padding:17px 17px 19px}.portfolio-card-tag{font-size:10px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;color:var(--lime)}.portfolio-card-title{font:800 19px/1.2 var(--head);letter-spacing:-.6px}.portfolio-card-desc{color:#b8b1c4;font-size:13px;line-height:1.7;min-height:66px}.portfolio-card-link{display:inline-flex;align-items:center;gap:10px;color:#eee4ff;font-size:12px;font-weight:800}.portfolio-card-link b{color:var(--lime)}
+.portfolio-under{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:22px;padding:18px 20px;border-radius:14px;border:1px solid #353041;background:#171520;color:#cfc7db}.portfolio-under-link{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:800;color:#fff}.portfolio-under-link span{color:var(--lime)}
+@media (max-width:1100px){.portfolio-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.portfolio-section{padding:78px 0 84px}.portfolio-note{display:block;font-size:12px}.portfolio-toolbar{display:block}.portfolio-filters{margin-bottom:14px}.portfolio-toolbar-hint{display:block}.portfolio-grid{grid-template-columns:1fr}.portfolio-card-media{height:200px}.portfolio-card-title{font-size:18px}.portfolio-card-desc{min-height:0;font-size:12px}.portfolio-under{display:block}.portfolio-under-link{margin-top:12px;display:inline-flex}}
+
+
+/* Компактное портфолио: первые шесть работ, остальные по желанию */
+.portfolio-expand-wrap{display:flex;justify-content:center;margin-top:24px}
+.portfolio-show-more{padding:13px 24px;background:#272033;border:1px solid #655374;border-radius:12px;color:#f5edff;font-size:12px;font-weight:900;letter-spacing:.1px;transition:border-color .2s,background .2s}
+.portfolio-show-more:hover{border-color:var(--lime);background:#33283f}
+@media(max-width:760px){.portfolio-filters{gap:7px}.portfolio-filter{padding:9px 12px;font-size:11px}}
+
+/* Platforms block */
+.platforms-section{padding:78px 0 34px;background:linear-gradient(180deg,#0f0d15 0%,#13111b 100%)}
+.platforms-head{display:flex;justify-content:space-between;align-items:end;gap:28px;flex-wrap:wrap;margin-bottom:26px}.platforms-head h2{font:850 clamp(29px,3.3vw,49px)/1.22 var(--head);letter-spacing:-2px;margin:8px 0 0}.platforms-head p{max-width:470px;margin:0;color:var(--sub);font-size:14px;line-height:1.85}.platforms-head p strong{color:#fff}
+.platforms-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:16px}.platform-card{position:relative;display:flex;align-items:flex-start;gap:16px;padding:20px 18px;border:1px solid #3f384b;background:linear-gradient(180deg,#191621,#14121a);border-radius:18px;overflow:hidden;transition:transform .24s,border-color .24s,box-shadow .24s}.platform-card:before{content:"";position:absolute;inset:auto -10% 0 auto;width:120px;height:120px;background:radial-gradient(circle,#ffffff0d,transparent 70%);pointer-events:none}.platform-card:hover{transform:translateY(-4px);border-color:#9170d2;box-shadow:0 16px 50px #08061170}.platform-card-primary{border-color:#8563dd;box-shadow:0 0 0 1px #8964eb2b inset}
+.platform-icon-wrap{position:relative;flex:0 0 66px;width:66px;height:66px;display:grid;place-items:center}.platform-pulse{position:absolute;inset:8px;border-radius:50%;background:currentColor;opacity:.11;animation:platformPulse 2.2s ease-out infinite}.platform-icon{position:relative;z-index:1;width:66px;height:66px;border-radius:18px;display:grid;place-items:center;border:1px solid #ffffff1a;background:#111;color:#fff;box-shadow:inset 0 1px 0 #ffffff10}.platform-icon svg{width:31px;height:31px}.platform-icon span{font:900 23px/1 var(--head);letter-spacing:-1px}
+.platform-icon-twitch{background:linear-gradient(180deg,#2e1b52,#191224);color:#b994ff}.platform-icon-kick{background:linear-gradient(180deg,#1f3525,#101914);color:#6fff9d}.platform-icon-vk{background:linear-gradient(180deg,#183153,#111822);color:#7db1ff}.platform-icon-youtube{background:linear-gradient(180deg,#401518,#1c1011);color:#ff7979}
+.platform-copy{position:relative;z-index:1}.platform-badge{display:inline-flex;align-items:center;justify-content:center;min-height:24px;padding:0 10px;margin-bottom:8px;border-radius:999px;background:var(--lime);color:#16151e;font-size:10px;font-weight:900;letter-spacing:1.2px}.platform-copy h3{margin:0 0 6px;font:800 21px/1.18 var(--head)}.platform-copy p{margin:0;color:#b9b2c6;font-size:13px;line-height:1.72}
+@keyframes platformPulse{0%{transform:scale(.86);opacity:.08}55%{transform:scale(1.18);opacity:.18}100%{transform:scale(1.44);opacity:0}}
+@media (max-width:1100px){.platforms-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.platform-card-primary{grid-column:span 2}}
+@media (max-width:760px){.platforms-section{padding:64px 0 18px}.platforms-head{margin-bottom:20px}.platforms-head p{font-size:13px}.platforms-grid{grid-template-columns:1fr}.platform-card-primary{grid-column:auto}.platform-card{padding:18px 16px}.platform-icon-wrap{flex-basis:60px;width:60px;height:60px}.platform-icon{width:60px;height:60px}.platform-copy h3{font-size:18px}.platform-copy p{font-size:12px}}
+
+
+/* Пульсация самих логотипов платформ, с мягкой световой волной */
+.platform-icon{
+  transform-origin:center center;
+  animation:platformIconBeat 2.5s cubic-bezier(.4,0,.2,1) infinite;
+  will-change:transform,box-shadow;
+}
+.platform-icon-twitch{--pulse-color:rgba(153,104,255,.55);box-shadow:0 0 12px rgba(153,104,255,.22),inset 0 1px 0 #ffffff12}
+.platform-icon-kick{--pulse-color:rgba(91,255,115,.48);box-shadow:0 0 12px rgba(91,255,115,.16),inset 0 1px 0 #ffffff12}
+.platform-icon-vk{--pulse-color:rgba(67,153,255,.50);box-shadow:0 0 12px rgba(67,153,255,.18),inset 0 1px 0 #ffffff12}
+.platform-icon-youtube{--pulse-color:rgba(255,78,86,.55);box-shadow:0 0 12px rgba(255,78,86,.2),inset 0 1px 0 #ffffff12}
+.platform-card:nth-child(2) .platform-icon,.platform-card:nth-child(2) .platform-pulse{animation-delay:.35s}
+.platform-card:nth-child(3) .platform-icon,.platform-card:nth-child(3) .platform-pulse{animation-delay:.7s}
+.platform-card:nth-child(4) .platform-icon,.platform-card:nth-child(4) .platform-pulse{animation-delay:1.05s}
+.platform-card:nth-child(1) .platform-icon,.platform-card:nth-child(1) .platform-pulse{animation-duration:2.25s}
+.platform-icon-wrap{isolation:isolate}
+.platform-pulse{
+  background:radial-gradient(circle,currentColor 0%,transparent 74%);
+  opacity:.15;
+  filter:blur(3px);
+}
+.platform-card:nth-child(1) .platform-icon-wrap{color:#9b72ff}
+.platform-card:nth-child(2) .platform-icon-wrap{color:#78fa7e}
+.platform-card:nth-child(3) .platform-icon-wrap{color:#5aabff}
+.platform-card:nth-child(4) .platform-icon-wrap{color:#fc545e}
+@keyframes platformIconBeat{
+  0%,100%{transform:scale(.95);box-shadow:0 0 9px rgba(0,0,0,.03),inset 0 1px 0 #ffffff14}
+  45%{transform:scale(1.14);box-shadow:0 0 24px 5px var(--pulse-color),inset 0 1px 0 #ffffff22}
+  62%{transform:scale(1.07);box-shadow:0 0 17px 2px var(--pulse-color),inset 0 1px 0 #ffffff1e}
+}
+@media(prefers-reduced-motion:reduce){
+  .platform-icon,.platform-pulse{animation:none!important;transform:none!important}
+}
+
+
+/* Telegram checkout */
+.checkout-privacy{color:#aca2b8;font-size:11px;line-height:1.75;padding:12px 14px;border:1px solid #54475f;border-radius:9px;background:#20192a}
+.checkout-view form .honeypot{position:absolute!important;width:1px;height:1px;opacity:0;overflow:hidden;clip-path:inset(50%);pointer-events:none}
+.order-status{font-size:12px;font-weight:750;color:#bfb5cf;line-height:1.65;min-height:0}
+.order-status:empty{display:none}
+.order-status--success{color:var(--lime)}
+.order-status--error{color:#ff9ead}
+.checkout-button:disabled{opacity:.6;cursor:wait}
+
+</style>
+  
+</head>
+<body>
+  <div class="site-shell" id="top">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="VYBE STUDIO — на главную">
+          <span class="brand-symbol">V<span>✦</span></span>
+          <span class="brand-word">VYBE<span class="brand-dot">.</span><small>STUDIO</small></span>
+        </a>
+        <nav class="desktop-nav" aria-label="Основная навигация">
+          <a href="#portfolio">Наши работы</a>
+          <a href="#platforms">Платформы</a>
+          <a href="#catalog">Каталог услуг</a>
+          <a href="#bundle">Полный комплект</a>
+          <a href="#how">Как работаем</a>
+          <a href="#faq">Вопросы</a>
+        </nav>
+        <button class="cart-open header-cart" type="button" aria-label="Открыть корзину">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6H19a2 2 0 0 0 2-1.6L22 8H7"/><circle cx="10" cy="20" r="1"/><circle cx="19" cy="20" r="1"/></svg>
+          <span>Корзина</span><span class="cart-count" data-cart-count>0</span>
+        </button>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Меню для мобильных устройств" hidden>
+        <a href="#portfolio">Наши работы</a>
+        <a href="#platforms">Платформы</a>
+        <a href="#catalog">Каталог услуг</a>
+        <a href="#bundle">Полный комплект</a>
+        <a href="#how">Как работаем</a>
+        <a href="#faq">Вопросы</a>
+        <button class="cart-open mobile-nav-cart" type="button">Открыть корзину <span data-cart-count>0</span></button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-halo hero-halo-one" aria-hidden="true"></div>
+        <div class="hero-halo hero-halo-two" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <div class="eyebrow"><span class="pulse-dot"></span> ОФОРМЛЕНИЕ ДЛЯ TWITCH, KICK, VK LIVE И YOUTUBE <span class="eyebrow-spark">✳</span></div>
+            <h1 id="hero-title">ТВОЙ СТРИМ.<br>ТВОИ <span class="hero-highlight">ПРАВИЛА<span class="hero-highlight-dot">.</span></span></h1>
+            <p class="hero-description">Создаём оформление для стрим-каналов и контента: <strong>Twitch — основное направление</strong>, а также Kick, VK Live и YouTube. Плашки, баннеры, офлайн-экраны, логотипы и смайлы — всё полностью по вашему ТЗ.</p>
+            <div class="hero-buttons">
+              <a href="#portfolio" class="button button-lime">Смотреть наши работы <span aria-hidden="true">↗</span></a>
+              <a href="#platforms" class="button button-ghost">Платформы <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="hero-proof"><div class="hero-star">✳</div><span>По твоим пожеланиям.<br><strong>Полностью по вашему ТЗ.</strong></span><div class="hero-proof-line"></div><span>Цены от<br><strong>500 ₽</strong></span></div>
+          </div>
+          <div class="hero-stage" aria-label="Демонстрационный макет стрима в фиолетово-лаймовом стиле">
+            <div class="hero-asterisk hero-asterisk-top" aria-hidden="true">✳</div>
+            <div class="preview-floating preview-floating-one">✦ ТВОЙ УНИКАЛЬНЫЙ СТИЛЬ</div>
+            <div class="mock-stream">
+              <div class="mock-stream-top"><span class="mock-dots"><i></i><i></i><i></i></span><span>ПРЕДПРОСМОТР КАНАЛА</span><span class="mock-top-arrow">↗</span></div>
+              <div class="mock-stream-body">
+                <div class="mock-grid"></div><div class="mock-disc mock-disc-1"></div><div class="mock-disc mock-disc-2"></div>
+                <div class="mock-live"><i></i> В ЭФИРЕ</div>
+                <div class="mock-big-v">V<span>✦</span></div>
+                <div class="mock-scene-text">ИГРАЙ <span>ПО-СВОЕМУ</span></div>
+                <div class="mock-camera"><div class="mock-person"><div class="mock-head"></div><div class="mock-body-person"></div></div><span>ТВОЙ НИК ⚡</span></div>
+                <div class="mock-bottom"><span>✳ НОВЫЙ УРОВЕНЬ</span><span>● 02:35:16</span></div>
+              </div>
+            </div>
+            <div class="preview-floating preview-floating-two"><span class="float-heart">♥</span><span><b>НОВЫЙ ПОДПИСЧИК!</b><small>Тебя заметили ✨</small></span></div>
+            <div class="hero-asterisk hero-asterisk-bottom" aria-hidden="true">✳</div>
+          </div>
+        </div>
+        <div class="container hero-edge"><span>ОФОРМЛЕНИЕ, КОТОРОЕ ГОВОРИТ ЗА ТЕБЯ</span><span>СНАЧАЛА СМОТРИ РАБОТЫ ↓</span></div>
+      </section>
+
+      <div class="marquee" aria-label="Услуги студии"><div class="marquee-inner" aria-hidden="true"><span>ПЛАШКИ</span><b>✳</b><span>ЛОГОТИПЫ</span><b>✳</b><span>БАННЕРЫ</span><b>✳</b><span>СМАЙЛЫ</span><b>✳</b><span>ЭКРАНЫ СТРИМА</span><b>✳</b><span>ПЛАШКИ</span><b>✳</b><span>ЛОГОТИПЫ</span><b>✳</b><span>БАННЕРЫ</span><b>✳</b><span>СМАЙЛЫ</span><b>✳</b><span>ЭКРАНЫ СТРИМА</span><b>✳</b></div></div>
+
+
+      <section class="platforms-section" id="platforms" aria-labelledby="platforms-title">
+        <div class="container">
+          <div class="platforms-head">
+            <div>
+              <div class="section-kicker"><span class="kicker-line"></span> ПЛАТФОРМЫ</div>
+              <h2 id="platforms-title">РАБОТАЕМ НЕ ТОЛЬКО<br><span class="muted-heading">С TWITCH.</span></h2>
+            </div>
+            <p><strong>Twitch — наша основная тематика</strong>, но мы также оформляем каналы и контент для Kick, VK Live и YouTube. Заказчик сразу видит, что мы работаем с разными платформами.</p>
+          </div>
+          <div class="platforms-grid">
+            <article class="platform-card platform-card-primary">
+              <div class="platform-icon-wrap"><div class="platform-pulse"></div><div class="platform-icon platform-icon-twitch" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M5 3h15v10l-4 4h-4l-3 3v-3H5V3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M10 8v4M14 8v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </div></div>
+              <div class="platform-copy"><span class="platform-badge">ОСНОВА</span><h3>Twitch</h3><p>Главное направление: оформление стрим-каналов, плашки, баннеры, офлайн-экраны и смайлы.</p></div>
+            </article>
+            <article class="platform-card">
+              <div class="platform-icon-wrap"><div class="platform-pulse"></div><div class="platform-icon platform-icon-kick" aria-hidden="true"><span>K</span></div></div>
+              <div class="platform-copy"><h3>Kick</h3><p>Адаптируем оформление под Kick: яркий игровой стиль, баннеры, панели и экраны.</p></div>
+            </article>
+            <article class="platform-card">
+              <div class="platform-icon-wrap"><div class="platform-pulse"></div><div class="platform-icon platform-icon-vk" aria-hidden="true"><span>VK</span></div></div>
+              <div class="platform-copy"><h3>VK Live</h3><p>Делаем визуал для VK Live: обложки, графику канала и элементы фирменного стиля.</p></div>
+            </article>
+            <article class="platform-card">
+              <div class="platform-icon-wrap"><div class="platform-pulse"></div><div class="platform-icon platform-icon-youtube" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="6.5" width="17" height="11" rx="4" stroke="currentColor" stroke-width="1.8"/><path d="M10 9.4 15 12l-5 2.6V9.4Z" fill="currentColor"/></svg>
+              </div></div>
+              <div class="platform-copy"><h3>YouTube</h3><p>Оформляем YouTube-тематику: баннеры, превью-стиль, экраны ожидания и общий визуал канала.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+
+      
+      <section class="section portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="container">
+          <div class="section-heading portfolio-heading"><div><div class="section-kicker"><span class="kicker-line"></span> 01 / НАШИ РАБОТЫ</div><h2 id="portfolio-title">СНАЧАЛА ПОКАЗЫВАЕМ,<br><span class="muted-heading">ЧТО ТЫ ПОЛУЧИШЬ.</span></h2></div><p>Чтобы посетитель сразу видел уровень оформления, мы подняли блок с нашими работами выше. Здесь представлены плашки, баннеры, офлайн-экраны и смайлы в разных стилях.</p></div>
+          <div class="portfolio-note"><span>✦</span> Это примеры наших работ. Итоговый дизайн под каждого клиента создаётся <strong>полностью по вашему ТЗ</strong>.</div>
+          <div class="portfolio-toolbar"><div class="portfolio-filters" role="group" aria-label="Категории работ"><button type="button" class="portfolio-filter is-active" data-portfolio-filter="all" aria-pressed="true">Все работы <span>12</span></button><button type="button" class="portfolio-filter" data-portfolio-filter="panels" aria-pressed="false">Плашки <span>4</span></button><button type="button" class="portfolio-filter" data-portfolio-filter="banner" aria-pressed="false">Баннеры <span>3</span></button><button type="button" class="portfolio-filter" data-portfolio-filter="offline" aria-pressed="false">Офлайн <span>3</span></button><button type="button" class="portfolio-filter" data-portfolio-filter="emotes" aria-pressed="false">Смайлы <span>2</span></button></div><span class="portfolio-toolbar-hint"><span>✦</span> КЛИКАЙ ПО РАБОТАМ, ЧТОБЫ УВЕЛИЧИТЬ</span></div>
+          <div class="portfolio-grid" id="portfolio-grid"><button class="portfolio-card" type="button" data-portfolio-open="0" data-group="panels" aria-label="Открыть работу «Плашки Неон»"><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/neon-preview.webp" alt="Плашки Неон"><span class="portfolio-card-index">01</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Плашки · Неоновый стиль</span><span class="portfolio-card-title">Плашки Неон</span><span class="portfolio-card-desc">Фиолетово-синий киберпанк с ярким свечением и современным игровым вайбом.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="1" data-group="banner" aria-label="Открыть работу «Баннер Неоновый стрим»"><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/banner-neon-preview.webp" alt="Баннер Неоновый стрим"><span class="portfolio-card-index">02</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Баннер · Неоновый стиль</span><span class="portfolio-card-title">Баннер Неоновый стрим</span><span class="portfolio-card-desc">Яркий фиолетовый баннер с аниме-подачей и энергичной атмосферой Twitch.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="2" data-group="emotes" aria-label="Открыть работу «Смайлы — 5 настроений»"><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/emotes-expressions-preview.webp" alt="Смайлы — 5 настроений"><span class="portfolio-card-index">03</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Смайлы · Разные эмоции</span><span class="portfolio-card-title">Смайлы — 5 настроений</span><span class="portfolio-card-desc">Уютные, неоновые, котики, аниме и игровые эмоции: примеры стилистики наборов из пяти смайлов.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="3" data-group="offline" aria-label="Открыть работу «Офлайн Тёплый вайб»"><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/offline-warm-preview.webp" alt="Офлайн Тёплый вайб"><span class="portfolio-card-index">04</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Офлайн · Уютный стиль</span><span class="portfolio-card-title">Офлайн Тёплый вайб</span><span class="portfolio-card-desc">Экран “Стрим офлайн” в тёплой палитре, который сохраняет уют и внимание зрителя.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="4" data-group="panels" aria-label="Открыть работу «Плашки Kawaii»"><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/kawaii-preview.webp" alt="Плашки Kawaii"><span class="portfolio-card-index">05</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Плашки · Пастельный стиль</span><span class="portfolio-card-title">Плашки Kawaii</span><span class="portfolio-card-desc">Нежный розовый набор из пяти плашек с мягкой атмосферой и милыми акцентами.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="5" data-group="emotes" aria-label="Открыть работу «Смайлы — коллекции»"><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/emotes-collections-preview.webp" alt="Смайлы — коллекции"><span class="portfolio-card-index">06</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Смайлы · Разные персонажи</span><span class="portfolio-card-title">Смайлы — коллекции</span><span class="portfolio-card-desc">Стример, аниме, котики и яркие персонажи. В каталоге за 500 ₽ можно заказать пять смайлов по вашему ТЗ.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="6" data-group="panels" aria-label="Открыть работу «Плашки Киберспорт»" hidden><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/esports-preview.webp" alt="Плашки Киберспорт"><span class="portfolio-card-index">07</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Плашки · Киберспортивный стиль</span><span class="portfolio-card-title">Плашки Киберспорт</span><span class="portfolio-card-desc">Чёрно-красный дизайн с агрессивным характером и мощной подачей.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="7" data-group="panels" aria-label="Открыть работу «Плашки Фэнтези»" hidden><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/fantasy-preview.webp" alt="Плашки Фэнтези"><span class="portfolio-card-index">08</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Плашки · Фэнтези стиль</span><span class="portfolio-card-title">Плашки Фэнтези</span><span class="portfolio-card-desc">Атмосферный комплект с кристаллами, глубокими оттенками и магическим настроением.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="8" data-group="banner" aria-label="Открыть работу «Баннер Тёплый вайб»" hidden><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/banner-warm-preview.webp" alt="Баннер Тёплый вайб"><span class="portfolio-card-index">09</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Баннер · Уютный стиль</span><span class="portfolio-card-title">Баннер Тёплый вайб</span><span class="portfolio-card-desc">Тёплый ламповый баннер с домашней атмосферой, котиком и мягкими оранжевыми огнями.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="9" data-group="banner" aria-label="Открыть работу «Баннер Монохром»" hidden><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/banner-mono-preview.webp" alt="Баннер Монохром"><span class="portfolio-card-index">10</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Баннер · Чёрно-белый стиль</span><span class="portfolio-card-title">Баннер Монохром</span><span class="portfolio-card-desc">Сдержанный баннер в монохроме для более серьёзного и атмосферного образа канала.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="10" data-group="offline" aria-label="Открыть работу «Офлайн Неон»" hidden><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/offline-neon-preview.webp" alt="Офлайн Неон"><span class="portfolio-card-index">11</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Офлайн · Неоновый стиль</span><span class="portfolio-card-title">Офлайн Неон</span><span class="portfolio-card-desc">Фиолетовый экран ожидания с современной эстетикой и мягким свечением.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button><button class="portfolio-card" type="button" data-portfolio-open="11" data-group="offline" aria-label="Открыть работу «Офлайн Монохром»" hidden><span class="portfolio-card-media"><img loading="lazy" decoding="async" src="assets/offline-mono-preview.webp" alt="Офлайн Монохром"><span class="portfolio-card-index">12</span></span><span class="portfolio-card-body"><span class="portfolio-card-tag">Офлайн · Чёрно-белый стиль</span><span class="portfolio-card-title">Офлайн Монохром</span><span class="portfolio-card-desc">Минималистичный офлайн-экран в строгом чёрно-белом исполнении.</span><span class="portfolio-card-link">Посмотреть крупнее <b>↗</b></span></span></button></div>
+          <div class="portfolio-expand-wrap"><button id="portfolio-show-more" type="button" class="portfolio-show-more" aria-controls="portfolio-grid">Показать все 12 работ ↓</button></div><div class="portfolio-under"><span><span class="catalog-under-star">✳</span> Понравился стиль? Ниже можно сразу выбрать комплект услуг и оформить заявку.</span><a href="#catalog" class="portfolio-under-link">Перейти в каталог <span>↗</span></a></div>
+        </div>
+      </section>
+
+<section class="section catalog-section" id="catalog" aria-labelledby="catalog-title">
+        <div class="container">
+          <div class="section-heading"><div><div class="section-kicker"><span class="kicker-line"></span> 02 / КАТАЛОГ УСЛУГ</div><h2 id="catalog-title">СОБЕРИ СВОЙ<br><span class="muted-heading">ИДЕАЛЬНЫЙ СТРИМ.</span></h2></div><p>Четыре набора с понятными ценами. Нажми на карточку, чтобы добавить комплект в корзину. Каждый дизайн создаём по вашему ТЗ.</p></div>
+          <div class="catalog-toolbar"><div class="filters" role="group" aria-label="Фильтр услуг"><button type="button" class="filter is-active" data-filter="all" aria-pressed="true">Все наборы <span>4</span></button><button type="button" class="filter" data-filter="panels" aria-pressed="false">Плашки</button><button type="button" class="filter" data-filter="graphics" aria-pressed="false">Логотип + баннер</button><button type="button" class="filter" data-filter="extras" aria-pressed="false">Смайлы</button><button type="button" class="filter" data-filter="bundle" aria-pressed="false">Полный набор</button></div><span class="catalog-hint"><span>✦</span> НАЖМИ НА КАРТОЧКУ, ЧТОБЫ ДОБАВИТЬ</span></div>
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+          <div class="catalog-under"><span><span class="catalog-under-star">✳</span> Полностью по вашему техническому заданию — цвета, текст и стиль выбираете вы.</span><button class="text-cart cart-open" type="button">Посмотреть корзину <span>↗</span></button></div>
+        </div>
+      </section>
+
+
+      
+
+      <section class="section bundle-section" id="bundle" aria-labelledby="bundle-title">
+        <div class="container bundle-layout">
+          <div class="bundle-copy"><div class="section-kicker"><span class="kicker-line"></span> 03 / ВСЁ И СРАЗУ</div><div class="bundle-topline">ПОЛНОЕ ОФОРМЛЕНИЕ <span>✦</span></div><h2 id="bundle-title">ПОЛНЫЙ<br>КОМПЛЕКТ<span class="bundle-period">.</span></h2><p>Все три набора в одном заказе: 5 плашек, логотип с баннером и офлайн-экраном, 5 смайлов. Разработаем всё в едином стиле по вашему ТЗ.</p><div class="bundle-list"><span>✦ 5 плашек</span><span>✦ Логотип</span><span>✦ Баннер</span><span>✦ Экран «Офлайн»</span><span>✦ 5 смайлов</span></div><div class="bundle-buy"><div><small>ЦЕНА КОМПЛЕКТА</small><strong>1 500 ₽</strong></div><button class="button button-dark-lime" type="button" data-add="full-kit">Добавить комплект <span>↗</span></button></div></div>
+          <div class="bundle-display" aria-hidden="true"><div class="bundle-burst">✳</div><div class="bundle-screen"><div class="bundle-screen-top"><i></i><i></i><i></i><span>ТВОЙ КАНАЛ</span></div><div class="bundle-screen-center"><div class="bundle-screen-orb"></div><div class="bundle-screen-logo">V<span>✦</span></div><div class="bundle-screen-title">ТВОЙ<br>СТИЛЬ</div></div><div class="bundle-screen-bottom">ПОДПИСЫВАЙСЯ НА ВАЙБ <b>↗</b></div></div><div class="bundle-mini-panel"><span>❤</span> ДОНАТ <b>↗</b></div><div class="bundle-mini-emote"><span class="emoji-eyes">••</span><span class="emoji-smile">◡</span></div><div class="bundle-sticker">В ОДНОМ<br>СТИЛЕ ✦</div></div>
+        </div>
+      </section>
+
+      <section class="section how-section" id="how"><div class="container"><div class="section-heading"><div><div class="section-kicker"><span class="kicker-line"></span> 04 / КАК МЫ РАБОТАЕМ</div><h2>ОТ ИДЕИ<br><span class="muted-heading">ДО ТВОЕГО ВАЙБА.</span></h2></div><p>Никакой лишней сложности. Всего несколько шагов — и твой канал приобретает характер.</p></div><div class="steps-grid"><div class="step"><div class="step-head"><span>01</span><span>↗</span></div><div class="step-visual step-visual-one">✦</div><h3>ВЫБИРАЕШЬ</h3><p>Кладёшь нужные услуги в корзину. Можно собрать оформление по частям или взять комплект.</p></div><div class="step"><div class="step-head"><span>02</span><span>↗</span></div><div class="step-visual step-visual-two">◎</div><h3>ОБСУЖДАЕМ</h3><p>Передаёшь техническое задание: ник, тексты, цвета и примеры дизайна. Работаем по вашим пожеланиям.</p></div><div class="step"><div class="step-head"><span>03</span><span>✳</span></div><div class="step-visual step-visual-three">V</div><h3>СОЗДАЁМ</h3><p>Разрабатываем оформление и согласуем результат. Готовые файлы передаём тебе.</p></div></div></div></section>
+
+      <section class="section faq-section" id="faq"><div class="container faq-layout"><div><div class="section-kicker"><span class="kicker-line"></span> 05 / ВОПРОСЫ</div><h2>ДАВАЙ<br><span class="muted-heading">РАЗБЕРЁМСЯ.</span></h2><p>Остались идеи или вопросы по заказу? Всё можно обсудить после формирования заявки.</p></div><div class="faq-list"><details><summary>Сколько стоят плашки? <span>+</span></summary><p>Набор из 5 плашек стоит 500 ₽ за комплект. Темы плашек выбираете вы по своему техническому заданию: например, «Донат», «Обо мне», «Мой ПК», правила, ссылки.</p></details><details><summary>Что входит в полный комплект? <span>+</span></summary><p>В полный комплект за 1 500 ₽ входят все три набора: 5 плашек, логотип + баннер + экран «Стрим офлайн» и 5 смайлов. Всё оформляется в едином стиле по вашему ТЗ.</p></details><details><summary>Можно заказать только один набор? <span>+</span></summary><p>Да! Каждый из трёх наборов стоит по 500 ₽: 5 плашек; логотип, баннер и офлайн-экран; либо 5 смайлов. Отдельные элементы внутри наборов в этом прайсе не продаются.</p></details><details><summary>Как происходит оплата и отправка заказа? <span>+</span></summary><p>Сейчас сайт работает в демо-режиме: корзина и составление заявки работают, но онлайн-оплата и автоматическая отправка ещё не подключены. Итоговую заявку можно скопировать.</p></details></div></div></section>
+
+      <section class="bottom-cta"><div class="container bottom-cta-inner"><div><span class="bottom-eyebrow">✳ ТВОРИ. СТРИМЬ. ВЫДЕЛЯЙСЯ.</span><h2>ТВОЙ НОВЫЙ<br><span>ОБРАЗ ЖДЁТ.</span></h2></div><button class="button button-lime cart-open" type="button">Открыть корзину <span>↗</span></button><div class="bottom-orbit" aria-hidden="true">✳</div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="container footer-main"><div><a class="brand" href="#top" aria-label="Наверх"><span class="brand-symbol">V<span>✦</span></span><span class="brand-word">VYBE<span class="brand-dot">.</span><small>STUDIO</small></span></a><p>Стиль твоего Twitch — под твоё ТЗ.<br>Плашки, графика, смайлы и комплекты.</p></div><div class="footer-links"><a href="#portfolio">Работы</a><a href="#platforms">Платформы</a><a href="#catalog">Каталог</a><a href="#bundle">Комплект</a><a href="#how">Как работаем</a><a href="#faq">Вопросы</a></div><a class="up-link" href="#top">Наверх ↑</a></div><div class="container footer-bottom"><span>© <span id="year">2026</span> VYBE STUDIO</span><span>Демонстрационные изображения услуг • Не связано с Twitch</span></div></footer>
+  </div>
+
+
+  <div id="portfolio-backdrop" class="portfolio-backdrop" hidden></div>
+  <div id="portfolio-modal" class="portfolio-modal" role="dialog" aria-modal="true" aria-labelledby="portfolio-modal-title" hidden>
+    <div class="portfolio-modal-panel">
+      <button type="button" id="portfolio-close" class="portfolio-close" aria-label="Закрыть просмотр">✕</button>
+      <div class="portfolio-modal-content">
+        <div class="portfolio-modal-image-wrap"><img id="portfolio-modal-image" alt="" decoding="async"></div>
+        <div class="portfolio-modal-info">
+          <div class="portfolio-modal-tag" id="portfolio-modal-tag"></div>
+          <h3 id="portfolio-modal-title"></h3>
+          <p id="portfolio-modal-desc"></p>
+          <div class="portfolio-modal-controls">
+            <button type="button" class="portfolio-nav" id="portfolio-prev" aria-label="Предыдущая работа">←</button>
+            <span id="portfolio-modal-count">01 / 10</span>
+            <button type="button" class="portfolio-nav" id="portfolio-next" aria-label="Следующая работа">→</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="cart-overlay" class="cart-overlay" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" tabindex="-1">
+    <div class="drawer-top"><div><span class="drawer-overline">ТВОЙ ВЫБОР ✦</span><h2 id="cart-title">КОРЗИНА<span>.</span></h2></div><button type="button" id="cart-close" class="icon-close" aria-label="Закрыть корзину">✕</button></div>
+    <div class="drawer-content" id="cart-view">
+      <div class="cart-items" id="cart-items" aria-live="polite"></div>
+      <div class="cart-bottom"><div class="cart-total-row"><span>ИТОГО <small id="cart-count-text">0 услуг</small></span><strong id="cart-total">0 ₽</strong></div><button type="button" id="checkout-open" class="button button-lime checkout-button" disabled>Оформить заявку <span>↗</span></button><p>Пока без онлайн-оплаты. После оформления можно скопировать список услуг и пожелания.</p></div>
+    </div>
+    <div class="drawer-content checkout-view" id="checkout-view" hidden>
+      <button id="checkout-back" class="back-button" type="button">← Вернуться в корзину</button>
+      <h3>ПОЧТИ ГОТОВО ✦</h3><p>Укажите контакт для ответа и пожелания. После отправки нам в Telegram придёт ваш заказ с выбранными услугами и итоговой стоимостью.</p>
+      <form id="checkout-form">
+        <label>Ваш ник <span>*</span><input type="text" name="nickname" placeholder="Например, neon_fox" maxlength="80" required></label>
+        <label>Ваш Telegram или электронная почта <span>*</span><input type="text" name="contact" placeholder="@nickname или email" maxlength="140" required></label>
+        <label>Ссылка на канал <small>(необязательно)</small><input type="url" name="channel" placeholder="https://twitch.tv/мой_канал" maxlength="250"></label>
+        <label>Ваше ТЗ и пожелания <small>(можно обсудить позже)</small><textarea name="brief" rows="4" maxlength="2000" placeholder="Ник, названия плашек, референсы, цвета, стиль, тексты, идеи для смайлов..."></textarea></label>
+        <div class="checkout-privacy">✳ Нажимая на кнопку, вы соглашаетесь передать контактные данные и описание заказа студии VYBE STUDIO через Telegram для обработки заявки. Оплата здесь не производится.</div>
+        <label class="honeypot" aria-hidden="true">Не заполняйте это поле<input name="company" type="text" tabindex="-1" autocomplete="off"></label>
+        <button type="submit" class="button button-lime checkout-button" id="submit-order">Отправить заказ в Telegram <span>↗</span></button>
+        <div class="order-status" id="order-status" role="status" aria-live="polite"></div>
+      </form>
+      <div class="order-result" id="order-result" hidden aria-live="polite"><div class="result-label" id="order-result-heading">✳ КОПИЯ ЗАЯВКИ</div><p id="order-result-description">Сохрани текст заявки на всякий случай.</p><textarea id="order-text" aria-label="Текст готового заказа" readonly rows="11"></textarea><button id="copy-order" type="button" class="button button-purple">Скопировать заявку <span>⧉</span></button><div class="copy-hint" id="copy-hint" role="status"></div></div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden><div><span class="toast-check">✓</span><span id="toast-message">Добавлено в корзину</span></div><button type="button" class="cart-open toast-action">Корзина ↗</button></div>
+  <button type="button" class="mobile-cart-bar cart-open" id="mobile-cart-bar" hidden><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6H19a2 2 0 0 0 2-1.6L22 8H7"/><circle cx="10" cy="20" r="1"/><circle cx="19" cy="20" r="1"/></svg> Корзина <b data-cart-count>0</b></span><strong id="mobile-cart-total">0 ₽ ↗</strong></button>
+<script>
+/*
+  VYBE STUDIO — демонстрационный каталог Twitch-оформления.
+  Изменить цены, названия и состав предложений можно в PRODUCTS ниже.
+  Корзина хранится локально. Заказ отправляется в Telegram через серверную функцию Netlify после настройки бота. Оплата не подключена.
+*/
+const PRODUCTS = [
+  {id:'panels-kit', title:'5 плашек для Twitch', category:'panels', eyebrow:'Набор • 5 штук', price:500, unit:'за 5 плашек', desc:'Донат, обо мне, мой ПК и любые ещё две — темы, тексты и стиль выбираете вы.', art:'panels-kit', label:'5 ПЛАШЕК', icon:'▤'},
+  {id:'identity-kit', title:'Логотип + баннер + офлайн', category:'graphics', eyebrow:'Набор • 3 элемента', price:500, unit:'за весь набор', desc:'Логотип канала, баннер профиля и экран «Стрим офлайн» в одном стиле.', art:'identity-kit', label:'3 В 1', icon:'✦'},
+  {id:'emotes-kit', title:'5 смайлов для чата', category:'extras', eyebrow:'Набор • 5 штук', price:500, unit:'за 5 смайлов', desc:'Пять фирменных смайлов Twitch: эмоции и характеры по вашим идеям.', art:'emotes-kit', label:'5 СМАЙЛОВ', icon:'☺'},
+  {id:'full-kit', title:'Полный комплект', category:'bundle', eyebrow:'Всё для оформления канала', price:1500, unit:'за всё сразу', desc:'5 плашек + логотип + баннер + офлайн-экран + 5 смайлов. Всё по вашему ТЗ.', art:'kit', label:'ПОЛНЫЙ КОМПЛЕКТ', icon:'✳', featured:true}
+];
+
+const STORAGE_KEY = 'vybe-studio-cart-v4';
+const money = (value) => new Intl.NumberFormat('ru-RU').format(value) + ' ₽';
+const productById = new Map(PRODUCTS.map(p => [p.id, p]));
+
+function productArt(product) {
+  const label = `<span class="art-label">${product.label}</span>`;
+  if (product.art === 'kit') return `${label}<span class="kit-poster"><small>ТВОЙ TWITCH</small><strong>ТВОЙ<br><em>ВАЙБ.</em></strong></span><span class="kit-emote">♥</span><span class="kit-sticker">ВСЁ В ОДНОМ ✦</span>`;
+  if (product.art === 'panels-kit') return `${label}<span class="bundle-panels-preview"><span>♥ &nbsp; ДОНАТ <b>↗</b></span><span>✦ &nbsp; ОБО МНЕ <b>↗</b></span><span>⌘ &nbsp; МОЙ ПК <b>↗</b></span><span>★ &nbsp; ПРАВИЛА <b>↗</b></span><span>◎ &nbsp; ССЫЛКИ <b>↗</b></span></span><span class="bundle-art-spark">✳</span>`;
+  if (product.art === 'identity-kit') return `${label}<span class="identity-banner"><small>ТВОЙ КАНАЛ</small><b>ТВОЙ<br><em>СТИЛЬ</em></b></span><span class="identity-logo">V<span>✦</span></span><span class="identity-offline">☾ <b>ОФЛАЙН</b></span>`;
+  if (product.art === 'emotes-kit') return `${label}<span class="emotes-showcase"><i>♥</i><i>★</i><i>☻</i><i>✦</i><i>!</i></span><span class="emotes-stars">✳ ✦</span>`;
+  return label;
+}
+
+const productGrid = document.getElementById('product-grid');
+productGrid.innerHTML = PRODUCTS.map((p, index) => `
+  <button class="product-card${p.featured ? ' featured-card' : ''}" type="button" data-add="${p.id}" data-category="${p.category}" aria-label="Добавить в корзину: ${p.title}, ${money(p.price)}">
+    <span class="product-art ${'art-' + p.art}" aria-hidden="true">${productArt(p)}</span>
+    <span class="product-info"><span class="product-eyebrow">${String(index+1).padStart(2, '0')} / ${p.eyebrow}</span>
+      <span class="product-title">${p.title}</span><span class="product-description">${p.desc}</span>
+      <span class="product-bottom"><span class="product-cost">${money(p.price)}<small>${p.unit}</small></span><span class="product-plus">В корзину <span class="plus-icon">+</span></span></span>
+    </span>
+  </button>
+`).join('');
+
+function loadCart() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return {};
+    const cart = {};
+    for (const [id, qty] of Object.entries(raw)) {
+      if (productById.has(id) && Number.isInteger(qty) && qty > 0) cart[id] = Math.min(qty, 99);
+    }
+    return cart;
+  } catch (_) { return {}; }
+}
+let cart = loadCart();
+function saveCart() { try { localStorage.setItem(STORAGE_KEY, JSON.stringify(cart)); } catch (_) {} }
+const cartOverlay = document.getElementById('cart-overlay');
+const cartDrawer = document.getElementById('cart-drawer');
+const cartItems = document.getElementById('cart-items');
+const cartView = document.getElementById('cart-view');
+const checkoutView = document.getElementById('checkout-view');
+const checkoutButton = document.getElementById('checkout-open');
+const checkoutForm = document.getElementById('checkout-form');
+const orderResult = document.getElementById('order-result');
+const toast = document.getElementById('toast');
+const toastMessage = document.getElementById('toast-message');
+let toastTimer;
+let lastFocused;
+
+function totals() {
+  let count = 0, total = 0;
+  for (const [id, qty] of Object.entries(cart)) { const p=productById.get(id); if (p) { count += qty; total += p.price * qty; } }
+  return {count,total};
+}
+function renderCart() {
+  const {count,total} = totals();
+  document.querySelectorAll('[data-cart-count]').forEach(el => { el.textContent = String(count); });
+  document.getElementById('cart-total').textContent = money(total);
+  document.getElementById('cart-count-text').textContent = count + ' ' + (count%10===1 && count%100!==11 ? 'услуга' : [2,3,4].includes(count%10) && ![12,13,14].includes(count%100) ? 'услуги' : 'услуг');
+  document.getElementById('mobile-cart-total').textContent = money(total) + ' ↗';
+  document.getElementById('mobile-cart-bar').hidden = count === 0;
+  checkoutButton.disabled = count === 0;
+  const rows = PRODUCTS.filter(p => cart[p.id]);
+  if (!rows.length) {
+    cartItems.innerHTML = `<div class="empty-cart"><div class="empty-symbol">✳</div><h3>ЗДЕСЬ ПОКА ПУСТО</h3><p>Выбери услуги в каталоге — они появятся тут вместе с общей суммой.</p><button type="button" class="button button-ghost" id="go-to-catalog">Выбрать услуги ↗</button></div>`;
+  } else {
+    cartItems.innerHTML = rows.map(p => {
+      const qty = cart[p.id];
+      const cls = p.id==='full-kit'?'bundle':p.category==='panels'?'panel':p.category==='extras'?'emoji':'logo';
+      return `<div class="cart-item"><div class="cart-item-art ${cls}" aria-hidden="true"><span class="tiny-icon">${p.icon}</span></div><div class="cart-item-details"><span class="cart-item-name">${p.title}</span><span class="cart-item-unit">${money(p.price)} за комплект</span><div class="cart-item-row"><div class="quantity-controls" aria-label="Количество: ${p.title}"><button type="button" data-decrease="${p.id}" aria-label="Уменьшить количество: ${p.title}">−</button><span>${qty}</span><button type="button" data-increase="${p.id}" aria-label="Увеличить количество: ${p.title}" ${qty >= 99 ? 'disabled' : ''}>+</button></div><strong>${money(p.price * qty)}</strong></div><button type="button" class="cart-remove" data-remove="${p.id}">Удалить</button></div></div>`;
+    }).join('');
+  }
+}
+function notifyAdded(product) {
+  toastMessage.textContent = `«${product.title}» — в корзине`;
+  toast.hidden = false;
+  requestAnimationFrame(() => toast.classList.add('show'));
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(hideToast, 3300);
+  document.querySelectorAll('.cart-count').forEach(el => {el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump');});
+}
+function hideToast() {
+  toast.classList.remove('show');
+  setTimeout(() => { if (!toast.classList.contains('show')) toast.hidden = true; }, 260);
+}
+function addToCart(id) {
+  const p = productById.get(id);
+  if (!p) return;
+  cart[id] = Math.min(99, (cart[id] || 0) + 1);
+  saveCart(); renderCart(); notifyAdded(p);
+}
+function changeQty(id, value) {
+  if (!productById.has(id)) return;
+  const next = Math.min(99, Math.max(0, (cart[id] || 0) + value));
+  if (next <= 0) delete cart[id]; else cart[id] = next;
+  saveCart();renderCart();
+}
+function showCart() {
+  lastFocused = document.activeElement;
+  hideToast();
+  cartView.hidden = false; checkoutView.hidden = true;
+  cartOverlay.hidden = false;
+  cartDrawer.classList.add('open');
+  cartDrawer.setAttribute('aria-hidden','false');
+  document.body.classList.add('locked');
+  closeMobileMenu();
+  document.getElementById('cart-close').focus({preventScroll:true});
+}
+function closeCart() {
+  cartDrawer.classList.remove('open');
+  cartDrawer.setAttribute('aria-hidden','true');
+  document.body.classList.remove('locked');
+  setTimeout(() => { if (!cartDrawer.classList.contains('open')) cartOverlay.hidden = true; }, 360);
+  if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus({preventScroll:true});
+}
+function showCheckout() {
+  if (!totals().count) return;
+  cartView.hidden = true;
+  checkoutView.hidden = false;
+  orderResult.hidden = true;
+  document.getElementById('order-status').textContent = '';
+  document.getElementById('copy-hint').textContent = '';
+  checkoutView.scrollTop = 0;
+  checkoutView.querySelector('input').focus();
+}
+function showCartView() {
+  checkoutView.hidden = true;cartView.hidden = false;
+  document.getElementById('checkout-open').focus({preventScroll:true});
+}
+
+productGrid.addEventListener('click', event => { const button = event.target.closest('[data-add]'); if(button) addToCart(button.dataset.add); });
+document.querySelectorAll('[data-add]').forEach(button => { if (!productGrid.contains(button)) button.addEventListener('click', () => addToCart(button.dataset.add)); });
+document.querySelectorAll('.cart-open').forEach(button => button.addEventListener('click', showCart));
+document.getElementById('cart-close').addEventListener('click', closeCart);
+cartOverlay.addEventListener('click', closeCart);
+checkoutButton.addEventListener('click', showCheckout);
+document.getElementById('checkout-back').addEventListener('click', showCartView);
+cartItems.addEventListener('click', event => {
+  const inc = event.target.closest('[data-increase]');
+  const dec = event.target.closest('[data-decrease]');
+  const remove = event.target.closest('[data-remove]');
+  if (inc) changeQty(inc.dataset.increase, 1);
+  if (dec) changeQty(dec.dataset.decrease, -1);
+  if (remove) { delete cart[remove.dataset.remove]; saveCart(); renderCart(); }
+  if (event.target.closest('#go-to-catalog')) { closeCart(); document.getElementById('catalog').scrollIntoView({behavior:'smooth'}); }
+});
+
+document.addEventListener('keydown', event => {
+  if (!cartDrawer.classList.contains('open')) return;
+  if (event.key === 'Escape') { event.preventDefault(); closeCart(); return; }
+  if (event.key !== 'Tab') return;
+  const focusable = [...cartDrawer.querySelectorAll('button:not([disabled]),input,textarea,a[href]')]
+    .filter(el => !el.closest('[hidden]') && el.getClientRects().length);
+  if (!focusable.length) return;
+  const first = focusable[0], last = focusable[focusable.length-1];
+  if (event.shiftKey && document.activeElement===first) {event.preventDefault();last.focus();}
+  else if (!event.shiftKey && document.activeElement===last) {event.preventDefault();first.focus();}
+});
+
+const menuButton = document.getElementById('menu-button');
+const mobileNav = document.getElementById('mobile-nav');
+function closeMobileMenu() {mobileNav.hidden = true;menuButton.setAttribute('aria-expanded','false');menuButton.setAttribute('aria-label','Открыть меню');}
+menuButton.addEventListener('click',()=>{mobileNav.hidden=!mobileNav.hidden;const opened=!mobileNav.hidden;menuButton.setAttribute('aria-expanded',String(opened));menuButton.setAttribute('aria-label',opened?'Закрыть меню':'Открыть меню');});
+mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click',closeMobileMenu));
+
+const filterButtons = [...document.querySelectorAll('[data-filter]')];
+filterButtons.forEach(button => button.addEventListener('click', () => {
+  const filter = button.dataset.filter;
+  filterButtons.forEach(b => { b.classList.toggle('is-active',b===button);b.setAttribute('aria-pressed',String(b===button)); });
+  productGrid.querySelectorAll('.product-card').forEach(card => {card.hidden = filter!=='all' && card.dataset.category!==filter;});
+}));
+
+function buildOrder() {
+  const values = new FormData(checkoutForm);
+  const lines = ['ЗАЯВКА НА ОФОРМЛЕНИЕ · VYBE STUDIO','',
+    'Ник: ' + values.get('nickname'),
+    'Контакт: ' + values.get('contact'),
+    'Канал: ' + (values.get('channel') || 'Не указан'),'',
+    'ВЫБРАННЫЕ УСЛУГИ:'];
+  PRODUCTS.filter(p=>cart[p.id]).forEach(p=> {lines.push(`${cart[p.id]} × ${p.title} — ${money(p.price * cart[p.id])}`);});
+  lines.push('','ИТОГО: '+money(totals().total),'','ТЕХНИЧЕСКОЕ ЗАДАНИЕ:',values.get('brief') || 'Обсудим детали отдельно');
+  return lines.join('\n');
+}
+const orderStatus = document.getElementById('order-status');
+const sendOrderButton = document.getElementById('submit-order');
+let sendingOrder = false;
+function setOrderStatus(message, type) {
+  orderStatus.textContent = message;
+  orderStatus.className = 'order-status' + (type ? ' order-status--' + type : '');
+}
+checkoutForm.addEventListener('submit', async event => {
+  event.preventDefault();
+  if (sendingOrder || !checkoutForm.reportValidity() || !totals().count) return;
+  const form = new FormData(checkoutForm);
+  const order = {
+    nickname: String(form.get('nickname') || '').trim(),
+    contact: String(form.get('contact') || '').trim(),
+    channel: String(form.get('channel') || '').trim(),
+    brief: String(form.get('brief') || '').trim(),
+    company: String(form.get('company') || '').trim(),
+    items: PRODUCTS.filter(p=>cart[p.id]).map(p=>({id:p.id,qty:cart[p.id]}))
+  };
+  // A local copy is made even if network delivery fails. No order is labeled as sent
+  // until the server confirms Telegram's successful response.
+  const copy = buildOrder();
+  const resultHeading = document.getElementById('order-result-heading');
+  const resultDescription = document.getElementById('order-result-description');
+  sendingOrder = true;
+  sendOrderButton.disabled = true;
+  sendOrderButton.innerHTML = 'Отправляем… <span aria-hidden="true">↗</span>';
+  setOrderStatus('Отправляем заявку в Telegram…');
+  orderResult.hidden = true;
+  try {
+    if (location.protocol === 'file:') throw new Error('Это локальный предпросмотр. Разместите сайт на Netlify и настройте Telegram-бота, чтобы отправлять заказы.');
+    const response = await fetch('/.netlify/functions/order', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(order),
+      signal: AbortSignal.timeout(15000)
+    });
+    const data = await response.json().catch(()=>({}));
+    if (!response.ok || !data.ok) {
+      const detail = data.error || 'Сервер не принял заявку.';
+      throw new Error(detail);
+    }
+    resultHeading.textContent = '✓ ЗАКАЗ ОТПРАВЛЕН';
+    resultDescription.textContent = `Заказ № ${data.orderId} успешно доставлен в Telegram студии. Мы свяжемся с вами по указанному контакту. Копия заявки — ниже.`;
+    setOrderStatus('Заказ успешно отправлен в Telegram!','success');
+    document.getElementById('order-text').value = copy;
+    orderResult.hidden = false;
+    cart = {};
+    saveCart(); renderCart();
+  } catch (error) {
+    let reason = 'Не удалось отправить заказ. Проверьте подключение Telegram-бота или попробуйте позднее.';
+    if (error.name === 'TimeoutError' || error.name === 'AbortError') reason = 'Сервер не ответил вовремя. Чтобы не дублировать заказ, уточните получение перед повторной отправкой.';
+    else if (error.message && !error.message.toLowerCase().includes('failed to fetch')) reason = 'Не удалось отправить заказ: ' + error.message;
+    setOrderStatus(reason + ' Ниже можно скопировать текст заявки.', 'error');
+    resultHeading.textContent = '✳ ЗАЯВКА НЕ ОТПРАВЛЕНА';
+    resultDescription.textContent = 'Автоматическое получение не подтверждено. Скопируйте текст, чтобы сохранить заказ. Корзина остаётся на месте.';
+    document.getElementById('order-text').value = copy;
+    orderResult.hidden = false;
+  } finally {
+    sendingOrder = false;
+    sendOrderButton.disabled = false;
+    sendOrderButton.innerHTML = 'Отправить заказ в Telegram <span aria-hidden="true">↗</span>';
+    orderResult.scrollIntoView({block:'nearest',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+  }
+});
+
+document.getElementById('copy-order').addEventListener('click', async () => {
+  const output = document.getElementById('order-text');
+  const status = document.getElementById('copy-hint');
+  try {
+    if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(output.value);
+    else {output.focus();output.select();if(!document.execCommand('copy')) throw Error('copy error');}
+    status.textContent = 'Скопировано!';
+  } catch (_) {output.focus();output.select();status.textContent='Текст выделен. Скопируй его вручную (Ctrl+C).';}
+});
+
+const PORTFOLIO_ITEMS = [{"slug": "neon", "title": "Плашки Неон", "tag": "Плашки", "style": "Неоновый стиль", "desc": "Фиолетово-синий киберпанк с ярким свечением и современным игровым вайбом.", "thumb": "assets/neon-preview.webp", "full": "assets/neon-full.webp", "group": "panels"}, {"slug": "banner-neon", "title": "Баннер Неоновый стрим", "tag": "Баннер", "style": "Неоновый стиль", "desc": "Яркий фиолетовый баннер с аниме-подачей и энергичной атмосферой Twitch.", "thumb": "assets/banner-neon-preview.webp", "full": "assets/banner-neon-full.webp", "group": "banner"}, {"slug": "emotes-expressions", "title": "Смайлы — 5 настроений", "tag": "Смайлы", "style": "Разные эмоции", "desc": "Уютные, неоновые, котики, аниме и игровые эмоции: примеры стилистики наборов из пяти смайлов.", "thumb": "assets/emotes-expressions-preview.webp", "full": "assets/emotes-expressions-full.webp", "group": "emotes"}, {"slug": "offline-warm", "title": "Офлайн Тёплый вайб", "tag": "Офлайн", "style": "Уютный стиль", "desc": "Экран “Стрим офлайн” в тёплой палитре, который сохраняет уют и внимание зрителя.", "thumb": "assets/offline-warm-preview.webp", "full": "assets/offline-warm-full.webp", "group": "offline"}, {"slug": "kawaii", "title": "Плашки Kawaii", "tag": "Плашки", "style": "Пастельный стиль", "desc": "Нежный розовый набор из пяти плашек с мягкой атмосферой и милыми акцентами.", "thumb": "assets/kawaii-preview.webp", "full": "assets/kawaii-full.webp", "group": "panels"}, {"slug": "emotes-collections", "title": "Смайлы — коллекции", "tag": "Смайлы", "style": "Разные персонажи", "desc": "Стример, аниме, котики и яркие персонажи. В каталоге за 500 ₽ можно заказать пять смайлов по вашему ТЗ.", "thumb": "assets/emotes-collections-preview.webp", "full": "assets/emotes-collections-full.webp", "group": "emotes"}, {"slug": "esports", "title": "Плашки Киберспорт", "tag": "Плашки", "style": "Киберспортивный стиль", "desc": "Чёрно-красный дизайн с агрессивным характером и мощной подачей.", "thumb": "assets/esports-preview.webp", "full": "assets/esports-full.webp", "group": "panels"}, {"slug": "fantasy", "title": "Плашки Фэнтези", "tag": "Плашки", "style": "Фэнтези стиль", "desc": "Атмосферный комплект с кристаллами, глубокими оттенками и магическим настроением.", "thumb": "assets/fantasy-preview.webp", "full": "assets/fantasy-full.webp", "group": "panels"}, {"slug": "banner-warm", "title": "Баннер Тёплый вайб", "tag": "Баннер", "style": "Уютный стиль", "desc": "Тёплый ламповый баннер с домашней атмосферой, котиком и мягкими оранжевыми огнями.", "thumb": "assets/banner-warm-preview.webp", "full": "assets/banner-warm-full.webp", "group": "banner"}, {"slug": "banner-mono", "title": "Баннер Монохром", "tag": "Баннер", "style": "Чёрно-белый стиль", "desc": "Сдержанный баннер в монохроме для более серьёзного и атмосферного образа канала.", "thumb": "assets/banner-mono-preview.webp", "full": "assets/banner-mono-full.webp", "group": "banner"}, {"slug": "offline-neon", "title": "Офлайн Неон", "tag": "Офлайн", "style": "Неоновый стиль", "desc": "Фиолетовый экран ожидания с современной эстетикой и мягким свечением.", "thumb": "assets/offline-neon-preview.webp", "full": "assets/offline-neon-full.webp", "group": "offline"}, {"slug": "offline-mono", "title": "Офлайн Монохром", "tag": "Офлайн", "style": "Чёрно-белый стиль", "desc": "Минималистичный офлайн-экран в строгом чёрно-белом исполнении.", "thumb": "assets/offline-mono-preview.webp", "full": "assets/offline-mono-full.webp", "group": "offline"}];
+const portfolioCards = [...document.querySelectorAll('[data-portfolio-open]')];
+const portfolioModal = document.getElementById('portfolio-modal');
+const portfolioBackdrop = document.getElementById('portfolio-backdrop');
+const portfolioImg = document.getElementById('portfolio-modal-image');
+const portfolioTitle = document.getElementById('portfolio-modal-title');
+const portfolioTag = document.getElementById('portfolio-modal-tag');
+const portfolioDesc = document.getElementById('portfolio-modal-desc');
+const portfolioCount = document.getElementById('portfolio-modal-count');
+const portfolioPrev = document.getElementById('portfolio-prev');
+const portfolioNext = document.getElementById('portfolio-next');
+const portfolioClose = document.getElementById('portfolio-close');
+const portfolioFilters = [...document.querySelectorAll('[data-portfolio-filter]')];
+const portfolioMore = document.getElementById('portfolio-show-more');
+let portfolioExpanded = false;
+let portfolioIndex = 0;
+let portfolioReturnFocus = null;
+function renderPortfolio(index){
+  portfolioIndex = (index + PORTFOLIO_ITEMS.length) % PORTFOLIO_ITEMS.length;
+  const item = PORTFOLIO_ITEMS[portfolioIndex];
+  portfolioImg.src = item.full;
+  portfolioImg.alt = 'Пример нашей работы: ' + item.title;
+  portfolioTitle.textContent = item.title;
+  portfolioTag.textContent = item.tag + ' · ' + item.style;
+  portfolioDesc.textContent = item.desc;
+  portfolioCount.textContent = String(portfolioIndex + 1).padStart(2, '0') + ' / ' + String(PORTFOLIO_ITEMS.length).padStart(2, '0');
+}
+function openPortfolio(index){
+  portfolioReturnFocus = document.activeElement;
+  renderPortfolio(index);
+  portfolioModal.hidden = false;
+  portfolioBackdrop.hidden = false;
+  document.body.classList.add('locked');
+  portfolioClose.focus({preventScroll:true});
+}
+function closePortfolio(){
+  portfolioModal.hidden = true;
+  portfolioBackdrop.hidden = true;
+  document.body.classList.remove('locked');
+  if(portfolioReturnFocus && portfolioReturnFocus.focus){ portfolioReturnFocus.focus({preventScroll:true}); }
+}
+portfolioCards.forEach((card, index) => card.addEventListener('click', () => openPortfolio(index)));
+portfolioPrev.addEventListener('click', () => renderPortfolio(portfolioIndex - 1));
+portfolioNext.addEventListener('click', () => renderPortfolio(portfolioIndex + 1));
+portfolioClose.addEventListener('click', closePortfolio);
+portfolioBackdrop.addEventListener('click', closePortfolio);
+portfolioMore.addEventListener('click', () => {
+  portfolioExpanded = !portfolioExpanded;
+  portfolioCards.forEach((card, index) => {
+    card.hidden = !portfolioExpanded && index >= 6;
+  });
+  portfolioMore.textContent = portfolioExpanded ? 'Свернуть работы ↑' : 'Показать все 12 работ ↓';
+});
+portfolioFilters.forEach((button) => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.portfolioFilter;
+    portfolioFilters.forEach((b) => {
+      const active = b === button;
+      b.classList.toggle('is-active', active);
+      b.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    portfolioCards.forEach((card, index) => {
+      const matches = filter === 'all' || card.dataset.group === filter;
+      card.hidden = !matches || (filter === 'all' && !portfolioExpanded && index >= 6);
+    });
+    portfolioMore.hidden = filter !== 'all';
+    portfolioMore.textContent = portfolioExpanded ? 'Свернуть работы ↑' : 'Показать все 12 работ ↓';
+  });
+});
+document.addEventListener('keydown', (event) => {
+  if (portfolioModal.hidden) return;
+  if (event.key === 'Escape') { event.preventDefault(); closePortfolio(); }
+  if (event.key === 'ArrowLeft') { event.preventDefault(); renderPortfolio(portfolioIndex - 1); }
+  if (event.key === 'ArrowRight') { event.preventDefault(); renderPortfolio(portfolioIndex + 1); }
+});
+
+document.getElementById('year').textContent = String(new Date().getFullYear());
+renderCart();
+
+</script>
+</body>
+</html>
